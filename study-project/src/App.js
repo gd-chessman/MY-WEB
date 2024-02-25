@@ -6,8 +6,8 @@ import Course from './pages/Course';
 function App() {
   return (
       <Routes>
-        <Route path="levanquy.com" element={<HomePage />} />
-        <Route path="levanquy.com/course" element={<Course />} />
+        <Route path="https://gd-chessman.github.io/MY-WEB/" element={<HomePage />} />
+        <Route path="/course" element={<Course />} />
       </Routes>
   );
 }
