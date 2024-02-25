@@ -6,7 +6,7 @@ import Course from './pages/Course';
 function App() {
   return (
       <Routes>
-        <Route path="https://gd-chessman.github.io/MY-WEB/" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/course" element={<Course />} />
       </Routes>
   );
