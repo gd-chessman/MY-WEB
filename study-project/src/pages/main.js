@@ -1,4 +1,4 @@
-function sliderAnimation(){
+export function sliderAnimation(){
     let slider = document.querySelector('.slider .list');
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');

@@ -1,6 +1,7 @@
+// import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './home.module.css';
-import avartar from '../assets/icons/avatar.jpg';
+import avartar from '../assets/icons/avatar.png';
 import img1 from '../assets/img/img1.gif';
 import img2 from '../assets/img/img2.png';
 import img3 from '../assets/img/img3.png';
@@ -18,9 +19,6 @@ import fbIcon from '../assets/icons/facebook.png';
 import zaloIcon from '../assets/icons/icons8-zalo-480.png';
 import tiktokIcon from '../assets/icons/tiktok.png';
 import youtubeIcon from '../assets/icons/youtube.png';
-
-import {sliderAnimation} from './main';
-
 
 function Home() {
     return (

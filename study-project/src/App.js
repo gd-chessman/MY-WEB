@@ -1,7 +1,7 @@
 import { Routes, Route, Link } from 'react-router-dom';
 import HomePage from './pages/Home';
 import Course from './pages/Course';
-
+// import './App.css';
 
 function App() {
   return (

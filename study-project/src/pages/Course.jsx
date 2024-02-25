@@ -1,4 +1,4 @@
-// import './course-md.css'
+import './course-md.css'
 function Course(){
     return(
         <div id="app">
