@@ -1,4 +1,5 @@
 import './course-md.css'
+import avartar from '../assets/icons/avatar.png';
 function Course(){
     return(
         <div id="app">
@@ -10,7 +11,7 @@ function Course(){
                 <li className="logo">
                   <a href="/">
                     <img
-                      src="./frontend/assets/favicon/android-icon-144x144.png"
+                      src={avartar}
                       width="32px"
                       style={{ borderRadius: 4 }}
                     />

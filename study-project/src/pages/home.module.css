@@ -356,6 +356,11 @@
     transform: translateY(40%);
 }
 
+/* CSS class phụ */
+.iconSize{
+    width: 28px;
+}
+
 /* Responsive */
 /* Large desktop screens */
 @media screen and (min-width: 1920px) {
