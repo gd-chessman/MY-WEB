@@ -1,9 +1,14 @@
 export function sliderAnimation(){
-    let slider = document.querySelector('.slider .list');
+let sliderImage = document.getElementById("sliderImage") 
+if(!sliderImage){
+    return;
+}
+let slider = document.querySelector('.slider .list');
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 let dots = document.querySelectorAll('.slider .dots li');
+
 
 let lengthItems = items.length - 1;
 let active = 0;

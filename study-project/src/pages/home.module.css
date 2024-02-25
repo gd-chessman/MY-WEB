@@ -160,7 +160,7 @@
 }
 
 /* Slider */
-#sliderImage {
+/* #sliderImage {
     margin-top: 64px;
     width: 100%;
 }
@@ -241,7 +241,7 @@
 
 .slider .dots li.active {
     width: 30px;
-}
+} */
 
 /* Main */
 #main {

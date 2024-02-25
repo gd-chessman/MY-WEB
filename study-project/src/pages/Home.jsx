@@ -1,5 +1,6 @@
-// import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import './global.css'
 import styles from './home.module.css';
 import avartar from '../assets/icons/avatar.png';
 import img1 from '../assets/img/img1.gif';
@@ -21,7 +22,10 @@ import zaloIcon from '../assets/icons/icons8-zalo-480.png';
 import tiktokIcon from '../assets/icons/tiktok.png';
 import youtubeIcon from '../assets/icons/youtube.png';
 
+import {sliderAnimation} from './main';
+
 function Home() {
+    // sliderAnimation()
     return (
         <div id={styles.app}>
             <header id={styles.header}>
@@ -47,28 +51,40 @@ function Home() {
                     </nav>
                 </div>
             </header>
-            <div id={styles.sliderImage}>
-                <div className={styles.slider}>
-                    <div className={styles.list}>
-                        <div className={styles.item}><img src={img1} alt=""/></div>
-                        <div className={styles.item}><img src={img2} alt=""/></div>
-                        <div className={styles.item}><img src={img3} alt=""/></div>
-                        <div className={styles.item}><a href="https://levanquy0101.github.io/My-Portfolio/" target="_blank"><img src={img4} alt=""/></a></div>
-                        <div className={styles.item}><img src={img5} alt=""/></div>
+            <div id="sliderImage">
+                <div className="slider">
+                    <div className="list">
+                    <div className="item">
+                        <img src={img1} alt />
                     </div>
-                    <div className={styles.buttons}>
-                        <button id={styles.prev}>&lt;</button>
-                        <button id={styles.next}>&gt;</button>
+                    <div className="item">
+                        <img src={img2} alt />
                     </div>
-                    <ul className={styles.dots}>
-                        <li className={styles.active}></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                    <div className="item">
+                        <img src={img3} alt />
+                    </div>
+                    <div className="item">
+                        <a href="https://levanquy0101.github.io/My-Portfolio/" target="_blank">
+                        <img src={img4} alt />
+                        </a>
+                    </div>
+                    <div className="item">
+                        <img src={img5} alt />
+                    </div>
+                    </div>
+                    <div className="buttons">
+                    <button id="prev">&lt;</button>
+                    <button id="next">&gt;</button>
+                    </div>
+                    <ul className="dots">
+                    <li className="active" />
+                    <li />
+                    <li />
+                    <li />
+                    <li />
                     </ul>
                 </div>
-            </div>
+            </div>;
             <main id={styles.main}>
                 <aside></aside>
                 <div className={styles.container}>
@@ -196,6 +212,7 @@ function Home() {
                     <p>&copy; Trang web công nghệ được phát triển bởi LE&nbsp;VAN&nbsp;QUY</p>
                 </div>
             </footer>
+            {/* <p>{sliderAnimation()}</p> */}
         </div>
     );
 }
