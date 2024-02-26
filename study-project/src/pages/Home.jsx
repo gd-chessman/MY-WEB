@@ -133,7 +133,7 @@ function Home() {
                     <li />
                     </ul>
                 </div>
-            </div>;
+            </div>
             <main id={styles.main}>
                 <aside></aside>
                 <div className={styles.container}>
