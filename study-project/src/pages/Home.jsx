@@ -25,9 +25,7 @@ import youtubeIcon from '../assets/icons/youtube.png';
 // import {sliderAnimation} from './main';
 
 function Home() {
-    // sliderAnimation()
     useEffect(() => {
-        // Mã JavaScript của bạn ở đây
         let slider = document.querySelector('.slider .list');
         let items = document.querySelectorAll('.slider .list .item');
         let next = document.getElementById('next');

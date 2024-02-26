@@ -71,3 +71,8 @@
   .slider .dots li.active{
       width: 30px;
   }
+  @media print, screen and (max-width: 768px) {
+    .slider {
+        height: 220px;
+    }
+}
