@@ -22,10 +22,61 @@ import zaloIcon from '../assets/icons/icons8-zalo-480.png';
 import tiktokIcon from '../assets/icons/tiktok.png';
 import youtubeIcon from '../assets/icons/youtube.png';
 
-import {sliderAnimation} from './main';
+// import {sliderAnimation} from './main';
 
 function Home() {
     // sliderAnimation()
+    useEffect(() => {
+        // Mã JavaScript của bạn ở đây
+        let slider = document.querySelector('.slider .list');
+        let items = document.querySelectorAll('.slider .list .item');
+        let next = document.getElementById('next');
+        let prev = document.getElementById('prev');
+        let dots = document.querySelectorAll('.slider .dots li');
+        let lengthItems = items.length - 1;
+        let active = 0;
+
+        next.onclick = function() {
+            active = active + 1 <= lengthItems ? active + 1 : 0;
+            reloadSlider();
+        }
+
+        prev.onclick = function() {
+            active = active - 1 >= 0 ? active - 1 : lengthItems;
+            reloadSlider();
+        }
+
+        let refreshInterval = setInterval(() => {
+            next.click();
+        }, 3000);
+
+        function reloadSlider() {
+            const slider = document.querySelector('.slider .list');
+            const last_active_dot = document.querySelector('.slider .dots li.active');
+            const active_dot = document.querySelectorAll('.slider .dots li')[active];
+            
+            if (slider && last_active_dot && active_dot) {
+                slider.style.left = -items[active].offsetLeft + 'px';
+                last_active_dot.classList.remove('active');
+                active_dot.classList.add('active');
+                clearInterval(refreshInterval);
+                refreshInterval = setInterval(() => {
+                    next.click();
+                }, 3000);
+            }
+        }
+
+        dots.forEach((li, key) => {
+            li.addEventListener('click', () => {
+                active = key;
+                reloadSlider();
+            })
+        });
+
+        window.onresize = () => {
+            reloadSlider();
+        };
+    }, []);
     return (
         <div id={styles.app}>
             <header id={styles.header}>
@@ -212,7 +263,6 @@ function Home() {
                     <p>&copy; Trang web công nghệ được phát triển bởi LE&nbsp;VAN&nbsp;QUY</p>
                 </div>
             </footer>
-            {/* <p>{sliderAnimation()}</p> */}
         </div>
     );
 }
