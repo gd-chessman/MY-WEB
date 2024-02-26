@@ -1,8 +1,4 @@
-export function sliderAnimation(){
-let sliderImage = document.getElementById("sliderImage") 
-if(!sliderImage){
-    return;
-}
+export function sliderAnimation(){    
 let slider = document.querySelector('.slider .list');
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
@@ -21,6 +17,7 @@ prev.onclick = function(){
     reloadSlider();
 }
 let refreshInterval = setInterval(()=> {next.click()}, 3000);
+
 function reloadSlider(){
     slider.style.left = -items[active].offsetLeft + 'px';
     // 

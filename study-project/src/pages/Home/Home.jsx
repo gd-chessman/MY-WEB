@@ -1,80 +1,93 @@
 import { Link } from 'react-router-dom';
 import React, { useEffect } from 'react';
-import './global.css'
+import '../global.css'
 import styles from './home.module.css';
-import avartar from '../assets/icons/avatar.png';
-import img1 from '../assets/img/img1.gif';
-import img2 from '../assets/img/img2.png';
-import img3 from '../assets/img/img3.png';
-import img4 from '../assets/img/img4.png';
-import img5 from '../assets/img/img5.png';
-import item8 from '../assets/img/item8.jpg';
-import item9 from '../assets/img/item9.jpg';
-import item10 from '../assets/img/item10.jpg';
-import item11 from '../assets/img/item11.jpg';
-import item12 from '../assets/img/item12.jpg';
-import htmlIcon from '../assets/icons/html.png';
-import menuBar from '../assets/icons/menu-bar.png';
-import cssIcon from '../assets/icons/css.jpg';
-import jsIcon from '../assets/icons/javascript.png';
-import fbIcon from '../assets/icons/facebook.png';
-import zaloIcon from '../assets/icons/icons8-zalo-480.png';
-import tiktokIcon from '../assets/icons/tiktok.png';
-import youtubeIcon from '../assets/icons/youtube.png';
-
-// import {sliderAnimation} from './main';
+import avartar from '../../assets/icons/avatar.png';
+import img1 from '../../assets/img/img1.gif';
+import img2 from '../../assets/img/img2.png';
+import img3 from '../../assets/img/img3.png';
+import img4 from '../../assets/img/img4.png';
+import img5 from '../../assets/img/img5.png';
+import item8 from '../../assets/img/item8.jpg';
+import item9 from '../../assets/img/item9.jpg';
+import item10 from '../../assets/img/item10.jpg';
+import item11 from '../../assets/img/item11.jpg';
+import item12 from '../../assets/img/item12.jpg';
+import htmlIcon from '../../assets/icons/html.png';
+import menuBar from '../../assets/icons/menu-bar.png';
+import cssIcon from '../../assets/icons/css.jpg';
+import jsIcon from '../../assets/icons/javascript.png';
+import fbIcon from '../../assets/icons/facebook.png';
+import zaloIcon from '../../assets/icons/icons8-zalo-480.png';
+import tiktokIcon from '../../assets/icons/tiktok.png';
+import youtubeIcon from '../../assets/icons/youtube.png';
+// import { sliderAnimation } from './main';
 
 function Home() {
+    // const location = useLocation();
     useEffect(() => {
-        let slider = document.querySelector('.slider .list');
-        let items = document.querySelectorAll('.slider .list .item');
-        let next = document.getElementById('next');
-        let prev = document.getElementById('prev');
-        let dots = document.querySelectorAll('.slider .dots li');
-        let lengthItems = items.length - 1;
-        let active = 0;
-
-        next.onclick = function() {
-            active = active + 1 <= lengthItems ? active + 1 : 0;
-            reloadSlider();
-        }
-
-        prev.onclick = function() {
-            active = active - 1 >= 0 ? active - 1 : lengthItems;
-            reloadSlider();
-        }
-
-        let refreshInterval = setInterval(() => {
-            next.click();
-        }, 3000);
-
-        function reloadSlider() {
-            const slider = document.querySelector('.slider .list');
-            const last_active_dot = document.querySelector('.slider .dots li.active');
-            const active_dot = document.querySelectorAll('.slider .dots li')[active];
-            
-            if (slider && last_active_dot && active_dot) {
-                slider.style.left = -items[active].offsetLeft + 'px';
-                last_active_dot.classList.remove('active');
-                active_dot.classList.add('active');
-                clearInterval(refreshInterval);
-                refreshInterval = setInterval(() => {
-                    next.click();
-                }, 3000);
+        let sliderImage = document.getElementById("sliderImage");  {
+            if(sliderImage == null){
+                console.log("ID trong DOM không tồn tại!")
+            }else{
+                console.log("ID trong DOM có tồn tại!")
+                sliderAnimation()
             }
-        }
+        }  
+    });
+    function sliderAnimation(){
+        let sliderImage = document.getElementById("sliderImage");
+        if (sliderImage == null) {
+            console.log("ID không tồn tại!")
+        }else{
+            console.log("ID có tồn tại")
+            let slider = document.querySelector('.slider .list');
+            let items = document.querySelectorAll('.slider .list .item');
+            let next = document.getElementById('next');
+            let prev = document.getElementById('prev');
+            let dots = document.querySelectorAll('.slider .dots li');
 
-        dots.forEach((li, key) => {
-            li.addEventListener('click', () => {
-                active = key;
+
+            let lengthItems = items.length - 1;
+            let active = 0;
+            next.onclick = function(){
+                active = active + 1 <= lengthItems ? active + 1 : 0;
                 reloadSlider();
-            })
-        });
+            }
+            prev.onclick = function(){
+                active = active - 1 >= 0 ? active - 1 : lengthItems;
+                reloadSlider();
+            }
+            let refreshInterval = setInterval(()=> {next.click()}, 3000);
 
-        window.onresize = () => {
-            reloadSlider();
-        };
-    }, []);
+            function reloadSlider(){
+                slider.style.left = -items[active].offsetLeft + 'px';
+                // 
+                let last_active_dot = document.querySelector('.slider .dots li.active');
+                console.log(last_active_dot)
+                if(last_active_dot == null){
+                    dots[active].classList.add('active');
+                }else{
+                    last_active_dot.classList.remove('active');
+                }
+                dots[active].classList.add('active');
+                console.log(dots)
+                clearInterval(refreshInterval);
+                refreshInterval = setInterval(()=> {next.click()}, 3000);
+          
+            }
+
+            dots.forEach((li, key) => {
+                li.addEventListener('click', ()=>{
+                    active = key;
+                    reloadSlider();
+                })
+            })
+            window.onresize = function(event) {
+                reloadSlider();
+            };
+        }
+    }
     return (
         <div id={styles.app}>
             <header id={styles.header}>
@@ -137,7 +150,7 @@ function Home() {
             <main id={styles.main}>
                 <aside></aside>
                 <div className={styles.container}>
-                    <h2>Khóa học tại CodeGym</h2>
+                    <h2>Khóa học Web FullStack CodeGym</h2>
                     <div className={styles.course}>
                         <div className={styles.nameCourse}>
                             <a href="">
@@ -172,12 +185,12 @@ function Home() {
                             </Link>
                         </div>
                         <div className={styles.nameCourse}>
-                            <a href="">
+                            <Link to="/content">
                                 <figure>
                                     <img src={item12} alt="" width="100%"/>
                                 </figure>
                                 <figcaption>Module5</figcaption>
-                            </a>
+                            </Link>
                         </div>
                         <div className={styles.nameCourse}>
                             <a href="">

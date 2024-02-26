@@ -1,5 +1,5 @@
 import './course-md.css'
-import avartar from '../assets/icons/avatar.png';
+import avartar from '../../assets/icons/avatar.png';
 function Course(){
     return(
         <div id="app">
