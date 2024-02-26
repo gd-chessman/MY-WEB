@@ -257,11 +257,28 @@
 .course {
     display: flex;
     flex-wrap: wrap;
+    /* border-radius: 10px; */
 }
 
 .nameCourse {
     width: 24%;
     margin: 0.5%;
+    box-shadow: 0 1px 2px #666;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0.5rem;
+}
+.nameCourse a{
+    color: orangered;
+}
+.nameCourse img{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+.nameCourse:hover{
+    box-shadow: 1px 3px 3px yellowgreen;
 }
 
 /* Footer */
