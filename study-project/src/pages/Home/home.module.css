@@ -262,11 +262,12 @@
 
 .nameCourse {
     width: 24%;
+    padding: 4px;
     margin: 0.5%;
     box-shadow: 0 1px 2px #666;
     text-align: center;
     font-weight: bold;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
 }
 .nameCourse a{
     color: orangered;
@@ -277,8 +278,11 @@
     width: 100%;
     height: 100%;
 }
+.nameCourse img:hover{
+    transform: translateY(2px);
+}
 .nameCourse:hover{
-    box-shadow: 1px 3px 3px yellowgreen;
+    box-shadow: 0 2px 3px rgb(104, 104, 104);
 }
 
 /* Footer */
