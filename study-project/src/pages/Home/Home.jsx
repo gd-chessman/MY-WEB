@@ -95,7 +95,15 @@ function Home() {
                     <nav className={styles.navLinkHeader}>
                         <ul className={styles.nav}>
                             <li className={styles.logo}><a href="/"><img src={avartar} width="32px" style={{ borderRadius: 4 }} alt=""/>&nbsp;Chessman</a></li>
-                            <li><a href="">Tin tức - Thủ thuật</a></li>
+                            <li>
+                                <a href="">Dịch&nbsp;vụ</a>
+                                <div className={styles.navService}>
+                                    <a href="">Lập trình Web</a>
+                                    <a href="">Lập trình Mobile</a>
+                                    <a href="">Lập trình Nhúng</a>
+                                </div>
+                            </li>
+                            <li><a href="">Tin&nbsp;tức</a></li>
                             <li>
                                 <div className={styles.group}>
                                     <svg viewBox="0 0 24 24" aria-hidden="true" className={styles.iconSearch}>
@@ -106,8 +114,8 @@ function Home() {
                                     <input className={styles.inputDesktop} type="search" placeholder="Search"/>
                                 </div>
                             </li>
-                            <li><a href="">Hỏi đáp</a></li>
-                            <li><a href="./login.html">Tài khoản</a></li>
+                            <li><a href="">Hỏi&nbsp;đáp</a></li>
+                            <li><a href="./login.html">Tài&nbsp;khoản</a></li>
                             <li><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="32px" height="32px" color='#cbd5e1'><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg></li>
                             {/* <li className={styles.menu}><button className={styles.buttonMenu} id="openModalBtn"><img src={menuBar} alt="" className={styles.iconSize}/></button></li> */}
                         </ul>
