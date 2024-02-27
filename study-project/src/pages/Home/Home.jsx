@@ -14,7 +14,7 @@ import item10 from '../../assets/img/item10.jpg';
 import item11 from '../../assets/img/item11.jpg';
 import item12 from '../../assets/img/item12.jpg';
 import htmlIcon from '../../assets/icons/html.png';
-import menuBar from '../../assets/icons/menu-bar.png';
+// import menuBar from '../../assets/icons/menu-bar.png';
 import cssIcon from '../../assets/icons/css.jpg';
 import jsIcon from '../../assets/icons/javascript.png';
 import fbIcon from '../../assets/icons/facebook.png';
@@ -108,7 +108,8 @@ function Home() {
                             </li>
                             <li><a href="">Hỏi đáp</a></li>
                             <li><a href="./login.html">Tài khoản</a></li>
-                            <li className={styles.menu}><button className={styles.buttonMenu} id="openModalBtn"><img src={menuBar} alt="" className={styles.iconSize}/></button></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="32px" height="32px" color='#cbd5e1'><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg></li>
+                            {/* <li className={styles.menu}><button className={styles.buttonMenu} id="openModalBtn"><img src={menuBar} alt="" className={styles.iconSize}/></button></li> */}
                         </ul>
                     </nav>
                 </div>

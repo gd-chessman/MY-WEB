@@ -73,9 +73,9 @@
     height: 60px;
 }
 
-.navLinkHeader ul li:last-child {
+/* .navLinkHeader ul li:last-child {
     display: none;
-}
+} */
 
 .navLinkHeader ul li a {
     display: flex;
