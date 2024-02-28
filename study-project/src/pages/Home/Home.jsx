@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import React, { useEffect } from 'react';
+// import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../global.css'
 import styles from './home.module.css';
 import avartar from '../../assets/icons/avatar.png';
@@ -25,7 +26,7 @@ import youtubeIcon from '../../assets/icons/youtube.png';
 // import { sliderAnimation } from './main';
 
 function Home() {
-    // const location = useLocation();
+    let refreshInterval;
     useEffect(() => {
         let sliderImage = document.getElementById("sliderImage");  {
             if(sliderImage == null){
@@ -35,6 +36,12 @@ function Home() {
                 sliderAnimation()
             }
         }  
+        // Cần phải trả về 1 hàm mới hoạt động
+        return () => {
+            clearInterval(refreshInterval);
+        };
+        
+        // return clearInterval(refreshInterval) Cách này không được
     });
     function sliderAnimation(){
         let sliderImage = document.getElementById("sliderImage");
@@ -59,7 +66,7 @@ function Home() {
                 active = active - 1 >= 0 ? active - 1 : lengthItems;
                 reloadSlider();
             }
-            let refreshInterval = setInterval(()=> {next.click()}, 3000);
+            refreshInterval = setInterval(()=> {next.click()}, 3000);
 
             function reloadSlider(){
                 slider.style.left = -items[active].offsetLeft + 'px';
