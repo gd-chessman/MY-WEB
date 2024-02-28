@@ -8,11 +8,12 @@ import img2 from '../../assets/img/img2.png';
 import img3 from '../../assets/img/img3.png';
 import img4 from '../../assets/img/img4.png';
 import img5 from '../../assets/img/img5.png';
-import item8 from '../../assets/img/item8.jpg';
-import item9 from '../../assets/img/item9.jpg';
-import item10 from '../../assets/img/item10.jpg';
-import item11 from '../../assets/img/item11.jpg';
-import item12 from '../../assets/img/item12.jpg';
+import item8 from '../../assets/img/item8.png';
+import item9 from '../../assets/img/item9.png';
+import item10 from '../../assets/img/item10.png';
+import item11 from '../../assets/img/item11.png';
+import item12 from '../../assets/img/item12.png';
+import item13 from '../../assets/img/item13.png';
 import htmlIcon from '../../assets/icons/html.png';
 // import menuBar from '../../assets/icons/menu-bar.png';
 import cssIcon from '../../assets/icons/css.jpg';
@@ -204,7 +205,7 @@ function Home() {
                         <div className={styles.nameCourse}>
                             <a href="">
                                 <figure>
-                                    <img src={item10} alt="" width="100%"/>
+                                    <img src={item13} alt="" width="100%"/>
                                 </figure>
                                 <figcaption>Module6</figcaption>
                             </a>
