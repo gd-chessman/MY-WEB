@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7d4a230d.css",
-    "main.js": "/static/js/main.01d3f8d6.js",
+    "main.js": "/static/js/main.8e903c34.js",
     "static/js/453.df772d1c.chunk.js": "/static/js/453.df772d1c.chunk.js",
     "static/media/item12.png": "/static/media/item12.37a42e9db91499f9060d.png",
     "static/media/item10.png": "/static/media/item10.fc8bdd843513d7c5f231.png",
@@ -9,7 +9,7 @@
     "static/media/img1.gif": "/static/media/img1.9680ed954f3da2a22272.gif",
     "static/media/img4.png": "/static/media/img4.26ebdf98dea30a65cb59.png",
     "static/media/javascript.png": "/static/media/javascript.3d07d32e9e204cb83e7f.png",
-    "static/media/item9.png": "/static/media/item9.98e43779c25ee57693ac.png",
+    "static/media/item9.png": "/static/media/item9.0695a1b63f173c9b02ca.png",
     "static/media/img5.png": "/static/media/img5.e998ac8d0c052950029b.png",
     "static/media/item11.png": "/static/media/item11.8fb187cdd58b04fbe8ff.png",
     "static/media/item13.png": "/static/media/item13.9b406cbee425156303e2.png",
@@ -22,11 +22,11 @@
     "static/media/icons8-zalo-480.png": "/static/media/icons8-zalo-480.8b31612857c517ac3d2b.png",
     "index.html": "/index.html",
     "main.7d4a230d.css.map": "/static/css/main.7d4a230d.css.map",
-    "main.01d3f8d6.js.map": "/static/js/main.01d3f8d6.js.map",
+    "main.8e903c34.js.map": "/static/js/main.8e903c34.js.map",
     "453.df772d1c.chunk.js.map": "/static/js/453.df772d1c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7d4a230d.css",
-    "static/js/main.01d3f8d6.js"
+    "static/js/main.8e903c34.js"
   ]
 }
