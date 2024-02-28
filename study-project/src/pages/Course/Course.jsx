@@ -19,7 +19,7 @@ function Course(){
                   </a>
                 </li>
                 <li>
-                  <a href="./login.html">Tài khoản</a>
+                  <a href="#!">Cài đặt</a>
                 </li>
               </ul>
             </nav>
