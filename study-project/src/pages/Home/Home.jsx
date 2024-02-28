@@ -240,6 +240,9 @@ function Home() {
                     </div>
                 </div>
             </main>
+            <scroll-top class="scroll-top">
+                    <a href="#">&uarr;</a>       
+            </scroll-top>
             <footer id={styles.footer}>
                 <div className={styles.footerContainer}>
                     <div className={styles.footerContent}>
