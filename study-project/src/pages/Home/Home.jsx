@@ -41,7 +41,7 @@ function Home() {
             clearInterval(refreshInterval);
         };
         
-        // return clearInterval(refreshInterval) Cách này không được
+        // return clearInterval(refreshInterval) //Cách này không được
     });
     function sliderAnimation(){
         let sliderImage = document.getElementById("sliderImage");
