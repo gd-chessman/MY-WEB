@@ -42,7 +42,7 @@ function Home() {
         };
         
         // return clearInterval(refreshInterval) //Cách này không được
-    });
+    },[]);
     function sliderAnimation(){
         let sliderImage = document.getElementById("sliderImage");
         if (sliderImage == null) {
