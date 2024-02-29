@@ -15,7 +15,6 @@ import item10 from '../../assets/img/item10.png';
 import item11 from '../../assets/img/item11.png';
 import item12 from '../../assets/img/item12.png';
 import item13 from '../../assets/img/item13.png';
-import htmlIcon from '../../assets/icons/html.png';
 // import menuBar from '../../assets/icons/menu-bar.png';
 import hot from '../../assets/icons/hot.png';
 import fullStack from '../../assets/icons/fullstack.png';
@@ -23,8 +22,12 @@ import frontEnd from '../../assets/icons/frontend.png';
 import backEnd from '../../assets/icons/backend.png';
 import other from '../../assets/icons/code.png';
 
+import htmlIcon from '../../assets/icons/html.png';
 import cssIcon from '../../assets/icons/css.jpg';
 import jsIcon from '../../assets/icons/javascript.png';
+import reactJS from '../../assets/img/react-logo.png';
+import bootstrap from '../../assets/img/bootstrap.png';
+
 import fbIcon from '../../assets/icons/facebook.png';
 import zaloIcon from '../../assets/icons/icons8-zalo-480.png';
 import tiktokIcon from '../../assets/icons/tiktok.png';
@@ -199,7 +202,7 @@ function Home() {
                         </div>
                         <p>FrontEnd</p>
                     </a>
-                    <a href="" className={styles.navItem}>
+                    <a href="#back-end" className={styles.navItem}>
                         <div className={styles.boxIcon}>
                             <img src={backEnd} alt="" width="42px" height="42px" />
                         </div>
@@ -288,6 +291,49 @@ function Home() {
                                     <img src={jsIcon} alt="" width="100%"/>
                                 </figure>
                                 <figcaption>Javascript</figcaption>
+                            </a>
+                        </div>
+                        <div className={styles.nameCourse}>
+                            <a href="">
+                                <figure>
+                                    <img src={bootstrap} alt="" width="100%"/>
+                                </figure>
+                                <figcaption>Bootstrap</figcaption>
+                            </a>
+                        </div>
+                        <div className={styles.nameCourse}>
+                            <a href="">
+                                <figure>
+                                    <img src={reactJS} alt="" width="100%"/>
+                                </figure>
+                                <figcaption>ReactJS</figcaption>
+                            </a>
+                        </div>
+                        <div className={styles.nameCourse}>
+                            <a href="">
+                                <figure>
+                                    <img src='https://api.otakoyi.software/uploads/content/2023/11/20/1280/vuejs-and-seo--your-steps-to-take-to-become-more-seo-friendly-317x237.webp' alt="" width="100%"/>
+                                </figure>
+                                <figcaption>VueJS</figcaption>
+                            </a>
+                        </div>
+                    </div>
+                    <h2 id='back-end'>Khóa học BackEnd</h2>
+                    <div className={styles.course}>
+                        <div className={styles.nameCourse}>
+                            <a href="">
+                                <figure>
+                                    <img src='https://www.freecodecamp.org/news/content/images/2023/05/revised_node.png' alt="" width="100%"/>
+                                </figure>
+                                <figcaption>NodeJS</figcaption>
+                            </a>
+                        </div>
+                        <div className={styles.nameCourse}>
+                            <a href="">
+                                <figure>
+                                    <img src='https://unica.vn/media/imagesck/1624420787_Java-Core-la-gi.jpg?v=1624420787' alt="" width="100%"/>
+                                </figure>
+                                <figcaption>Java</figcaption>
                             </a>
                         </div>
                     </div>
