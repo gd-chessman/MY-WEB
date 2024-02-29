@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c20eb63a.css",
-    "main.js": "/static/js/main.0b04d021.js",
+    "main.css": "/static/css/main.c0143864.css",
+    "main.js": "/static/js/main.10448e95.js",
     "static/js/453.df772d1c.chunk.js": "/static/js/453.df772d1c.chunk.js",
     "static/media/item12.png": "/static/media/item12.37a42e9db91499f9060d.png",
     "static/media/item10.png": "/static/media/item10.fc8bdd843513d7c5f231.png",
@@ -21,12 +21,12 @@
     "static/media/html.png": "/static/media/html.0292c7dcb302142baa5e.png",
     "static/media/icons8-zalo-480.png": "/static/media/icons8-zalo-480.8b31612857c517ac3d2b.png",
     "index.html": "/index.html",
-    "main.c20eb63a.css.map": "/static/css/main.c20eb63a.css.map",
-    "main.0b04d021.js.map": "/static/js/main.0b04d021.js.map",
+    "main.c0143864.css.map": "/static/css/main.c0143864.css.map",
+    "main.10448e95.js.map": "/static/js/main.10448e95.js.map",
     "453.df772d1c.chunk.js.map": "/static/js/453.df772d1c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c20eb63a.css",
-    "static/js/main.0b04d021.js"
+    "static/css/main.c0143864.css",
+    "static/js/main.10448e95.js"
   ]
 }
