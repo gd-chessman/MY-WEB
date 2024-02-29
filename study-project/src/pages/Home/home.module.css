@@ -87,19 +87,26 @@
 }
 
 .navService{
-    display: none;
     position: absolute;
     top: 50px;
     background-color: white;
     border-radius: 4px;
     padding: 8px;
+    visibility: hidden;
 }
 .navLinkHeader ul li:nth-child(2):hover .navService{
-    display: block;
+    visibility: visible;
+    animation: moveT 0.3s ease forwards;
 }
-.navService:hover{
-    display: inline-block;
+@keyframes moveT {
+    0%{
+        transform: translateY(24px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
+
 .navService > a{
     padding: 4px;
     color: black;
