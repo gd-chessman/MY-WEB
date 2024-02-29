@@ -41,8 +41,8 @@ body::-webkit-scrollbar-track {
   .slider .buttons{
       position: absolute;
       top: 45%;
-      left: 5%;
-      width: 90%;
+      left: 2%;
+      width: 96%;
       display: flex;
       justify-content: space-between;
   }

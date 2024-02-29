@@ -217,10 +217,45 @@
 #main {
     margin-top: 20px;
     width: 100%;
+    padding: 4px;
+}
+.listLanguage{
+    overflow-x: auto;
+    background-color: whitesmoke;
+    border-bottom: 1px solid greenyellow;
+}
+.listLanguage::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
 }
 
+.listLanguage::-webkit-scrollbar-thumb {
+    background-color: greenyellow;
+}
+
+.listLanguage::-webkit-scrollbar-track {
+    background-color: #525252;
+}
+.navLanguage ul{
+    display: flex;
+    margin: 8px 0;
+}
+.navLanguage ul li{
+    display: block;
+    min-width: 100px;
+    margin: 0 4px;
+    padding: 4px;
+    border: 1px solid #dcdcdc;
+    border-radius: 999px;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+}
+
+
+
 .container {
-    padding: 1vw 2.5vw;
+    padding: 1vw;
     background-color: #f0f8ff;
 }
 

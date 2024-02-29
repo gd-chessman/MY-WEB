@@ -114,7 +114,6 @@ function Home() {
                             <li><a href="">Hỏi&nbsp;đáp</a></li>
                             <li><a href="./login.html">Tài&nbsp;khoản</a></li>
                             <li><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="32px" height="32px" color='#cbd5e1'><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg></li>
-                            {/* <li className={styles.menu}><button className={styles.buttonMenu} id="openModalBtn"><img src={menuBar} alt="" className={styles.iconSize}/></button></li> */}
                         </ul>
                     </nav>
                 </div>
@@ -155,6 +154,26 @@ function Home() {
             </div>
             <main id={styles.main}>
                 <aside></aside>
+                <div className={styles.listLanguage}>
+                    <nav className={styles.navLanguage}>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>PHP</li>
+                            <li>NodeJS</li>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                            <li>Bootstrap 5</li>
+                            <li>Sass</li>
+                            <li>ReactJS</li>
+                            <li>VueJS</li>
+                        </ul>
+                    </nav>
+                </div>
                 <div className={styles.container}>
                     <h2>Khóa học Web FullStack CodeGym</h2>
                     <div className={styles.course}>
