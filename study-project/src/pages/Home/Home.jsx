@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-// import React, { useEffect } from 'react';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+// import React, { useEffect, useState } from 'react';
 import '../global.css'
 import styles from './home.module.css';
 import avartar from '../../assets/icons/avatar.png';
@@ -28,33 +28,26 @@ import youtubeIcon from '../../assets/icons/youtube.png';
 function Home() {
     let refreshInterval;
     useEffect(() => {
-        let sliderImage = document.getElementById("sliderImage");  {
-            if(sliderImage == null){
-                console.log("ID trong DOM không tồn tại!")
-            }else{
-                console.log("ID trong DOM có tồn tại!")
-                sliderAnimation()
-            }
-        }  
+        sliderAnimation()
         // Cần phải trả về 1 hàm mới hoạt động
         return () => {
             clearInterval(refreshInterval);
         };
         
         // return clearInterval(refreshInterval) //Cách này không được
+
     },[]);
     function sliderAnimation(){
         let sliderImage = document.getElementById("sliderImage");
         if (sliderImage == null) {
-            console.log("ID không tồn tại!")
+            console.log("ID trong DOM không tồn tại!")
         }else{
-            console.log("ID có tồn tại")
+            console.log("ID trong DOM có tồn tại!")
             let slider = document.querySelector('.slider .list');
             let items = document.querySelectorAll('.slider .list .item');
             let next = document.getElementById('next');
             let prev = document.getElementById('prev');
             let dots = document.querySelectorAll('.slider .dots li');
-
 
             let lengthItems = items.length - 1;
             let active = 0;
@@ -72,14 +65,9 @@ function Home() {
                 slider.style.left = -items[active].offsetLeft + 'px';
                 // 
                 let last_active_dot = document.querySelector('.slider .dots li.active');
-                console.log(last_active_dot)
-                if(last_active_dot == null){
-                    dots[active].classList.add('active');
-                }else{
-                    last_active_dot.classList.remove('active');
-                }
+                last_active_dot.classList.remove('active');
                 dots[active].classList.add('active');
-                console.log(dots)
+                // console.log(dots)
                 clearInterval(refreshInterval);
                 refreshInterval = setInterval(()=> {next.click()}, 3000);
           
@@ -91,9 +79,10 @@ function Home() {
                     reloadSlider();
                 })
             })
-            window.onresize = function(event) {
-                reloadSlider();
-            };
+            // window.onresize = function(event) {
+            //     console.log('Kích thước cửa sổ đã thay đổi!');
+            //     reloadSlider();
+            // };
         }
     }
     return (
