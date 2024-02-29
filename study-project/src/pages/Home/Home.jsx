@@ -17,6 +17,12 @@ import item12 from '../../assets/img/item12.png';
 import item13 from '../../assets/img/item13.png';
 import htmlIcon from '../../assets/icons/html.png';
 // import menuBar from '../../assets/icons/menu-bar.png';
+import hot from '../../assets/icons/hot.png';
+import fullStack from '../../assets/icons/fullstack.png';
+import frontEnd from '../../assets/icons/frontend.png';
+import backEnd from '../../assets/icons/backend.png';
+import other from '../../assets/icons/code.png';
+
 import cssIcon from '../../assets/icons/css.jpg';
 import jsIcon from '../../assets/icons/javascript.png';
 import fbIcon from '../../assets/icons/facebook.png';
@@ -174,8 +180,40 @@ function Home() {
                         </ul>
                     </nav>
                 </div>
+                <div className={styles.menuTop}>
+                    <a href="" className={styles.navItem}>
+                        <div className={styles.boxIcon}>
+                            <img src={hot} alt="" width="42px" height="42px" />
+                        </div>
+                        <p>Khóa Hot</p>
+                    </a>
+                    <a href="#full-stack" className={styles.navItem}>
+                        <div className={styles.boxIcon}>
+                            <img src={fullStack} alt="" width="42px" height="42px" />
+                        </div>
+                        <p>Full Stack</p>
+                    </a>
+                    <a href="#front-end" className={styles.navItem}>
+                        <div className={styles.boxIcon}>
+                            <img src={frontEnd} alt="" width="42px" height="42px" />
+                        </div>
+                        <p>FrontEnd</p>
+                    </a>
+                    <a href="" className={styles.navItem}>
+                        <div className={styles.boxIcon}>
+                            <img src={backEnd} alt="" width="42px" height="42px" />
+                        </div>
+                        <p>BackEnd</p>
+                    </a>
+                    <a href="" className={styles.navItem}>
+                        <div className={styles.boxIcon}>
+                            <img src={other} alt="" width="42px" height="42px" />
+                        </div>
+                        <p>Khác</p>
+                    </a>
+                </div>
                 <div className={styles.container}>
-                    <h2>Khóa học Web FullStack CodeGym</h2>
+                    <h2 id='full-stack'>Khóa học Web FullStack CodeGym</h2>
                     <div className={styles.course}>
                         <div className={styles.nameCourse}>
                             <a href="">
@@ -226,7 +264,7 @@ function Home() {
                             </a>
                         </div>
                     </div>
-                    <h2>Khóa học lẻ</h2>
+                    <h2 id='front-end'>Khóa học FrontEnd</h2>
                     <div className={styles.course}>
                         <div className={styles.nameCourse}>
                             <a href="">

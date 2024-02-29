@@ -4,7 +4,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #84cc16;
+    background-color: yellowgreen;
 }
 
 body::-webkit-scrollbar-track {
@@ -55,7 +55,7 @@ body::-webkit-scrollbar-track {
       border: none;
       font-family: monospace;
       font-weight: bold;
-      opacity: 0.4;
+      opacity: 0.2;
   }
   .slider .buttons button:hover{
     opacity: 1;
