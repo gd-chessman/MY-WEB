@@ -272,7 +272,7 @@ function Home() {
                         <div className={styles.nameCourse}>
                             <a href="">
                                 <figure>
-                                    <img src={htmlIcon} alt="" width="100%"/>
+                                    <img src='https://topviecit.vn/blog/wp-content/uploads/2021/11/thumb-5.jpg' alt="" width="100%"/>
                                 </figure>
                                 <figcaption>HTML</figcaption>
                             </a>
@@ -323,7 +323,7 @@ function Home() {
                         <div className={styles.nameCourse}>
                             <a href="">
                                 <figure>
-                                    <img src='https://www.freecodecamp.org/news/content/images/2023/05/revised_node.png' alt="" width="100%"/>
+                                    <img src='https://colorlib.com/wp/wp-content/uploads/sites/2/node.js-logo.png' alt="" width="100%"/>
                                 </figure>
                                 <figcaption>NodeJS</figcaption>
                             </a>

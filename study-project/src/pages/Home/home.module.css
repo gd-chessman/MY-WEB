@@ -317,6 +317,7 @@
     text-align: center;
     font-weight: bold;
     border-radius: 0.4rem;
+    background-color: white;
 }
 .nameCourse a{
     color: orangered;
