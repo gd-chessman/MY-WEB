@@ -15,9 +15,9 @@
 #header {
     width: 100%;
     background: linear-gradient(269.88deg, #f59e0b 6.75%, #fb923c 95.85%);
-    // position: fixed;
-    // top: 0;
-    // z-index: 100;
+    position: relative;
+    top: 0;
+    z-index: 100;
 }
 @property --k {
 	syntax: '<number>';
