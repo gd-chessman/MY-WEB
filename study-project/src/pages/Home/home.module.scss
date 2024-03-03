@@ -46,7 +46,7 @@
   text-align: center;
   text-transform: uppercase;
   animation: k 4s linear infinite;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: 'Black Ops One', system-ui;
 }
 @keyframes k { to { --k: 1 } }
@@ -505,7 +505,7 @@
         width: 32.3%;
     }
     .navLinkHeader .nav li:first-child > a {
-        font-size: 1.1rem !important;
+        font-size: 1.2rem !important;
     }
 }
 

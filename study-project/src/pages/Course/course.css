@@ -41,7 +41,7 @@
     text-align: center;
     text-transform: uppercase;
     animation: k 4s linear infinite;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: 'Black Ops One', system-ui;
 }
 @keyframes k { to { --k: 1 } }
