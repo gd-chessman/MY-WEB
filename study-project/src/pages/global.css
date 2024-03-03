@@ -37,7 +37,7 @@ body::-webkit-scrollbar-track {
   }
   .slider .list img{
       width: 1600px;
-      max-width: 100vw;
+      max-width: 93vw;
       height: 100%;
       object-fit: cover;
   }
@@ -123,6 +123,11 @@ body::-webkit-scrollbar-track {
       animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     }
   }
+  @media print, screen and (max-width: 992px) {
+    .slider .list img{
+        max-width: 100vw;
+    }
+}
   @media print, screen and (max-width: 768px) {
     .slider {
         height: 220px;
