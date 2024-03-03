@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import React, { useEffect } from 'react';
 // import React, { useEffect, useState } from 'react';
 import '../global.css'
-import styles from './home.module.css';
+import styles from './home.module.scss';
 import avartar from '../../assets/icons/avatar.png';
 import img1 from '../../assets/img/img1.gif';
 import img2 from '../../assets/img/img2.png';
@@ -36,6 +36,8 @@ import youtubeIcon from '../../assets/icons/youtube.png';
 
 function Home() {
     let refreshInterval;
+    var body = document.querySelector("body")
+    body.style.overflow ="auto";
     useEffect(() => {
         sliderAnimation()
         // Cần phải trả về 1 hàm mới hoạt động

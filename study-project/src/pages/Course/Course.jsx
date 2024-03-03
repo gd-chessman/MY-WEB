@@ -1,6 +1,16 @@
-import './course-md.css'
+import React, { useEffect, useState } from 'react';
+import './course.css'
 import avartar from '../../assets/icons/avatar.png';
+import './sidebarCourse.css'
+import SidebarCourse from './SidebarCourse';
 function Course(){
+  const [sidebar, setSibar] = useState(false)
+  var body = document.querySelector("body")
+  if(sidebar == true){
+    body.style.overflow ="hidden";
+  }else{
+    body.style.overflow ="auto";
+  }
     return(
         <div id="app">
         {/* Make Header */}
@@ -78,6 +88,7 @@ function Course(){
             </tbody>
           </table>
         </main>
+        {sidebar && <SidebarCourse />}
         {/* Make footer */}
         <footer id="footer">
           <nav className="nav-footer">
@@ -93,7 +104,7 @@ function Course(){
               </li>
             </ul>
             <ul>
-              <li><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="32px" height="32px" color='#cbd5e1'><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg></li>
+              <li onClick={()=>setSibar(!sidebar)}><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="32px" height="32px" color='#cbd5e1'><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg></li>
             </ul>
           </nav>
         </footer>
