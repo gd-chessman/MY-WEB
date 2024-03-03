@@ -129,6 +129,14 @@ function Home() {
                     </nav>
                 </div>
             </header>
+            <div className={styles.appWithSidebar} >
+            <aside className={styles.homeSidebar}>
+                <h5 style={{marginBottom: 30,marginTop: 40}}>HOME</h5>
+                <h5 style={{marginBottom: 30}}>POST</h5>
+                <h5 style={{marginBottom: 30}}>SETTING</h5>
+                <h5 style={{marginBottom: 30}}>OTHER</h5>
+            </aside>   
+            <main id={styles.main}>
             <div id="sliderImage">
                 <div className="slider">
                     <div className="list">
@@ -163,8 +171,6 @@ function Home() {
                     </ul>
                 </div>
             </div>
-            <main id={styles.main}>
-                <aside></aside>
                 <div className={styles.listLanguage}>
                     <nav className={styles.navLanguage}>
                         <ul>
@@ -341,6 +347,7 @@ function Home() {
                     </div>
                 </div>
             </main>
+            </div>
             <scroll-top class="scroll-top">
                     <a href="#">&uarr;</a>       
             </scroll-top>
