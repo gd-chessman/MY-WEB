@@ -223,7 +223,7 @@
 .listLanguage{
     overflow-x: auto;
     background-color: #e0e0e0;
-    border-bottom: 1px solid greenyellow;
+    border-bottom: 1px solid #7fff00;
 }
 .listLanguage::-webkit-scrollbar {
     width: 3px;
@@ -231,11 +231,11 @@
 }
 
 .listLanguage::-webkit-scrollbar-thumb {
-    background-color: greenyellow;
+    background-color: #7fff00;
 }
 
 .listLanguage::-webkit-scrollbar-track {
-    background-color: #525252;
+    background-color: #333;
 }
 .navLanguage ul{
     display: flex;
@@ -276,7 +276,7 @@
     font-weight: 600;
 }
 .menuTop > a:hover{
-    color: orangered;
+    color: #7fff00;
 }
 .menuTop .navItem{
     padding: 0.4rem;
