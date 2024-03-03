@@ -109,6 +109,7 @@ body::-webkit-scrollbar-track {
     cursor: pointer;
     animation: bounce_513 1s infinite;
     font-weight: bold;
+    z-index: 1000;
   }
 
   @keyframes bounce_513 {
