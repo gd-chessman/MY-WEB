@@ -229,8 +229,7 @@
     position: fixed;
     left: 0;
     top: 61px;
-
-
+    z-index: 1;
 }
 
 
@@ -366,6 +365,8 @@
     width: 100%;
     height: auto;
     margin-top: 10px;
+    position: relative;
+    z-index: 2;
 }
 
 .footerContainer {
