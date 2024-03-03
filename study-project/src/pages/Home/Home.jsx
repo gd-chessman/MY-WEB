@@ -131,10 +131,10 @@ function Home() {
             </header>
             <div className={styles.appWithSidebar} >
             <aside className={styles.homeSidebar}>
-                <h5 style={{marginBottom: 30,marginTop: 40}}>HOME</h5>
-                <h5 style={{marginBottom: 30}}>POST</h5>
-                <h5 style={{marginBottom: 30}}>SETTING</h5>
-                <h5 style={{marginBottom: 30}}>OTHER</h5>
+                <h5 style={{marginBottom: 40,marginTop: 40}}>HOME</h5>
+                <h5 style={{marginBottom: 40}}>POST</h5>
+                <h5 style={{marginBottom: 40}}>SETTING</h5>
+                <h5 style={{marginBottom: 40}}>OTHER</h5>
             </aside>   
             <main id={styles.main}>
             <div id="sliderImage">
