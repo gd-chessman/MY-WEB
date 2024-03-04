@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import React, { useEffect } from 'react';
-// import React, { useEffect, useState } from 'react';
+// import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../global.css'
 import styles from './home.module.scss';
 import avartar from '../../assets/icons/avatar.png';
@@ -32,22 +32,30 @@ import fbIcon from '../../assets/icons/facebook.png';
 import zaloIcon from '../../assets/icons/icons8-zalo-480.png';
 import tiktokIcon from '../../assets/icons/tiktok.png';
 import youtubeIcon from '../../assets/icons/youtube.png';
-// import { sliderAnimation } from './main';
+import SidebarHome from './SidebarHome';
+
 
 function Home() {
+    // Làm phần xử lý cho chuyển router không kích hoạt JS Home
     let refreshInterval;
-    var body = document.querySelector("body")
-    body.style.overflow ="auto";
     useEffect(() => {
         sliderAnimation()
         // Cần phải trả về 1 hàm mới hoạt động
         return () => {
             clearInterval(refreshInterval);
-        };
-        
+        };   
         // return clearInterval(refreshInterval) //Cách này không được
-
     },[]);
+
+    const [sidebar, setSibar] = useState(false)
+    var body = document.querySelector("body")
+    if(sidebar == true){
+      body.style.overflow ="hidden";
+    }else{
+      body.style.overflow ="auto";
+    }
+
+    //Làm phần slider cho trang Home
     function sliderAnimation(){
         let sliderImage = document.getElementById("sliderImage");
         if (sliderImage == null) {
@@ -124,11 +132,15 @@ function Home() {
                             </li>
                             <li><a href="">Hỏi&nbsp;đáp</a></li>
                             <li><a href="./login.html">Tài&nbsp;khoản</a></li>
-                            <li><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="32px" height="32px" color='#cbd5e1'><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg></li>
+                            <li onClick={()=>setSibar(!sidebar)} ><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="32px" height="32px" color='#cbd5e1'><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg></li>
                         </ul>
                     </nav>
                 </div>
             </header>
+            <div>
+                {/* <button onClick={()=>setSibar(!sidebar)} style={display : none}>Đongs</button> */}
+            </div>
+            {sidebar && <SidebarHome />}
             <div className={styles.appWithSidebar} >
             <aside className={styles.homeSidebar}>
                 <h5 style={{marginBottom: 40,marginTop: 40}}>HOME</h5>
