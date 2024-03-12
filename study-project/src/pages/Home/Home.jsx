@@ -98,10 +98,6 @@ function Home() {
                     reloadSlider();
                 })
             })
-            // window.onresize = function(event) {
-            //     console.log('Kích thước cửa sổ đã thay đổi!');
-            //     reloadSlider();
-            // };
         }
     }
     return (
@@ -137,10 +133,12 @@ function Home() {
                     </nav>
                 </div>
             </header>
-            <div>
-                {/* <button onClick={()=>setSibar(!sidebar)} style={display : none}>Đongs</button> */}
-            </div>
             {sidebar && <SidebarHome />}
+            {sidebar && 
+                <div>
+                    <button onClick={()=>setSibar(!sidebar)} className={styles.sidebarClose}>X</button>
+                </div>
+            }
             <div className={styles.appWithSidebar} >
             <aside className={styles.homeSidebar}>
                 <h5 style={{marginBottom: 40,marginTop: 40}}>HOME</h5>

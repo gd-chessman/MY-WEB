@@ -457,6 +457,17 @@
 .iconSize{
     width: 28px;
 }
+.sidebarClose{
+    color: #00F260;
+    background-color: black;
+    position: fixed;
+    z-index: 2000;
+    padding: 4px 8px;
+    border-radius: 4px;
+    right: 20px;
+    top: 20px;
+    font-weight: bold;
+}
 
 /* Responsive */
 /* Large desktop screens */
