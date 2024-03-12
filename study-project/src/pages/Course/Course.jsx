@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './course.css'
+import styles from './course.module.scss'
 import avartar from '../../assets/icons/avatar.png';
-import './sidebarCourse.css'
 import SidebarCourse from './SidebarCourse';
 function Course(){
   const [sidebar, setSibar] = useState(false)
@@ -12,13 +11,13 @@ function Course(){
     body.style.overflow ="auto";
   }
     return(
-        <div id="app">
+        <div id={styles.app}>
         {/* Make Header */}
-        <header id="header">
-          <div className="header-top">
-            <nav className="nav-link-header">
-              <ul className="nav">
-                <li className="logo">
+        <header id={styles.header}>
+          <div className={styles.headerTop}>
+            <nav className={styles.navLinkHeader}>
+              <ul className={styles.nav}>
+                <li className={styles.logo}>
                   <a href="/">
                     <img
                       src={avartar}
@@ -36,7 +35,7 @@ function Course(){
           </div>
         </header>
         {/* Make Main */}
-        <main id="main">
+        <main id={styles.main}>
           <h2 style={{ color: "rgb(0, 0, 164)", textAlign: "center" }}>
             1. Tổng quan Spring MVC
           </h2>
@@ -90,8 +89,8 @@ function Course(){
         </main>
         {sidebar && <SidebarCourse />}
         {/* Make footer */}
-        <footer id="footer">
-          <nav className="nav-footer">
+        <footer id={styles.footer}>
+          <nav className={styles.navFooter}>
             <ul>
               <li>Hỏi đáp</li>
             </ul>

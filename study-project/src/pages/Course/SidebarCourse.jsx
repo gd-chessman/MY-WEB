@@ -1,9 +1,10 @@
 import React from 'react';
+import styles from './sidebarCourse.module.scss'
 
 function SidebarCourse(){
     return(
-        <div id='frameSidebar'>
-        <div className='sidebarCourse'>
+        <div id={styles.frameSidebar}>
+        <div className={styles.sidebarCourse}>
             <h1>Khóa học Module4</h1>
             <ul>
                 <li>Bài 1</li>

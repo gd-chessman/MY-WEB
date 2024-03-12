@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
-// import React, { useEffect } from 'react';
 import React, { useEffect, useState } from 'react';
 import '../global.css'
 import styles from './home.module.scss';
+// import '../../components/SidebarMenu/sidebarMenu.module.scss'
+
 import avartar from '../../assets/icons/avatar.png';
 import img1 from '../../assets/img/img1.gif';
 import img2 from '../../assets/img/img2.png';
@@ -15,7 +16,6 @@ import item10 from '../../assets/img/item10.png';
 import item11 from '../../assets/img/item11.png';
 import item12 from '../../assets/img/item12.png';
 import item13 from '../../assets/img/item13.png';
-// import menuBar from '../../assets/icons/menu-bar.png';
 import hot from '../../assets/icons/hot.png';
 import fullStack from '../../assets/icons/fullstack.png';
 import frontEnd from '../../assets/icons/frontend.png';
@@ -32,7 +32,7 @@ import fbIcon from '../../assets/icons/facebook.png';
 import zaloIcon from '../../assets/icons/icons8-zalo-480.png';
 import tiktokIcon from '../../assets/icons/tiktok.png';
 import youtubeIcon from '../../assets/icons/youtube.png';
-import SidebarHome from './SidebarHome';
+import SidebarMenu from '../../components/SidebarMenu/SidebarMenu';
 
 
 function Home() {
@@ -133,7 +133,7 @@ function Home() {
                     </nav>
                 </div>
             </header>
-            {sidebar && <SidebarHome />}
+            {sidebar && <SidebarMenu />}
             {sidebar && 
                 <div>
                     <button onClick={()=>setSibar(!sidebar)} className={styles.sidebarClose}>X</button>
