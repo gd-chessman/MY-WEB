@@ -10,7 +10,9 @@
     list-style: none;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 /* Header */
 #header {
     width: 100%;
