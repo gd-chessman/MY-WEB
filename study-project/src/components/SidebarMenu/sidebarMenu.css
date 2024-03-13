@@ -6,8 +6,7 @@
     height: 100%;
     z-index: 1001;
 }
-.sidebarCourse{
-    display: flex;
+.sidebarMenu{
     background-color: white;
     position: absolute;
     width: 100%;
@@ -15,13 +14,34 @@
     height: 100%;
     right: 0;
     bottom: 0;
-    color: blue;
     animation: findIn 0.4s ease;
+    padding: 0.8rem;
+    
+}
+.sidebarMenu .myAccount{
+    margin: 8px 0;
+}
+.sidebarMenu .listNav{
+    width: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+    
+}
+.sidebarMenu .listNav ul{
+    color: blue;
+    width: 24%;
+    margin: 0.5%;
+}
+.sidebarMenu .listNav ul li{
+    border: 1px solid #dcdcdc;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
 
 }
-.sidebarCourse ul{
+/* .sidebarMenu ul{
     padding: 10px;
-}
+} */
 
 
 @keyframes findIn {
