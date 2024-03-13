@@ -148,7 +148,7 @@
 
 .navLinkHeader ul li:nth-last-child(2) a {
     padding: 4px 6px;
-    border: 1px solid #fb923c;
+    border: 1px solid #f97316;
     border-radius: 8px;
 }
 
@@ -331,6 +331,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 8px 0;
+    padding: 0 1%;
 }
 
 .nameCourse {
@@ -344,7 +345,7 @@
     background-color: white;
 }
 .nameCourse a{
-    color: orangered;
+    color: #f97316;
 }
 .nameCourse img{
     border-top-left-radius: 0.5rem;
@@ -364,7 +365,6 @@
     background-color: #f1f5f9;
     width: 100%;
     height: auto;
-    margin-top: 10px;
     position: relative;
     z-index: 2;
 }
@@ -459,7 +459,8 @@
 }
 .sidebarClose{
     color: #00F260;
-    background-color: black;
+    background-color: #111;
+    border: none;
     position: fixed;
     z-index: 1100;
     padding: 2px 8px;

@@ -20,28 +20,44 @@
 }
 .sidebarMenu .myAccount{
     margin: 8px 0;
+    /* font-size: 1.2rem; */
 }
+
 .sidebarMenu .listNav{
+    padding: 8px 0;
+    border-bottom: 1px solid #dcdcdc;
+    border-top: 1px solid #dcdcdc;
     width: 100%;
     display: flex; 
     flex-wrap: wrap;
     
 }
 .sidebarMenu .listNav ul{
-    color: blue;
+    color: black;
     width: 24%;
     margin: 0.5%;
 }
 .sidebarMenu .listNav ul li{
+    border-radius: 4px;
     border: 1px solid #dcdcdc;
     padding: 8px;
     width: 100%;
     text-align: center;
 
 }
-/* .sidebarMenu ul{
-    padding: 10px;
-} */
+.sidebarMenu .conttenOther ul{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.sidebarMenu .listBottom ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+.sidebarMenu .listBottom ul li{
+    padding: 4px;
+}
+
 
 
 @keyframes findIn {

@@ -32,7 +32,17 @@ function SidebarMenu(){
                     </ul>
                 ))}
                 </div>
-                <div>
+                <div className='conttenOther'>
+                    <ul>
+                        <li>Nội dung thêm</li>
+                        <li>Nội dung thêm</li>
+                        <li>Nội dung thêm</li>
+                        <li>Nội dung thêm</li>
+                        <li>Nội dung thêm</li>
+                        <li>Nội dung thêm</li>
+                    </ul>
+                </div>
+                <div className='listBottom'>
                     <ul>
                         <li>Cài đặt</li>
                         <li>Đăng xuất</li>
