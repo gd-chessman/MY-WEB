@@ -68,7 +68,8 @@ html{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    // justify-content: center;
     align-items: center;
 }
 
@@ -161,7 +162,8 @@ html{
     line-height: 28px;
     align-items: center;
     position: relative;
-    width: 300px;
+    // width: 300px;
+    width: 360px;
 }
 
 .navLinkHeader .group .inputDesktop {
@@ -523,6 +525,9 @@ html{
     .navLinkHeader .nav li:first-child > a {
         font-size: 1.2rem !important;
     }
+    .navLinkHeader .group{
+        width: 280px;
+    }
 }
 
 /* Tablets */
@@ -535,6 +540,10 @@ html{
     }
     .headerTop .navLinkHeader ul li:nth-child(6) {
         display: none;
+    }
+
+    .navLinkHeader .group{
+        width: 310px;
     }
 
 }

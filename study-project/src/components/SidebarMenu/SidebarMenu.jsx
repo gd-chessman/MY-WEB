@@ -32,7 +32,7 @@ function SidebarMenu(){
                     </ul>
                 ))}
                 </div>
-                <div className='conttenOther'>
+                {/* <div className='conttenOther'>
                     <ul>
                         <li>Nội dung thêm</li>
                         <li>Nội dung thêm</li>
@@ -41,7 +41,7 @@ function SidebarMenu(){
                         <li>Nội dung thêm</li>
                         <li>Nội dung thêm</li>
                     </ul>
-                </div>
+                </div> */}
                 <div className='listBottom'>
                     <ul>
                         <li>Cài đặt</li>
