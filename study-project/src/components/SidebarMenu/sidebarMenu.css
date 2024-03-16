@@ -45,9 +45,23 @@
     text-align: center;
 
 }
+.sidebarMenu .conttenOther{
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dcdcdc ;
+}
 .sidebarMenu .conttenOther ul{
     display: flex;
     /* flex-wrap: wrap; */
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.sidebarMenu .conttenOther ul li{
+    padding: 4px 0;
+}
+.sidebarMenu .listBottom{
+    padding: 8px;
 }
 .sidebarMenu .listBottom ul{
     display: flex;
@@ -55,7 +69,7 @@
 
 }
 .sidebarMenu .listBottom ul li{
-    padding: 4px;
+    padding: 4px 0;
 }
 
 

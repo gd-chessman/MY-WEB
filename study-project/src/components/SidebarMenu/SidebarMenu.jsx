@@ -2,20 +2,20 @@ import './sidebarMenu.css'
 
 function SidebarMenu(){
     const sidebarNavs = [
-        { id: 1, name: 'Item1' },
-        { id: 2, name: 'Item2' },
-        { id: 3, name: 'Item3' },
-        { id: 4, name: 'Item4' },
-        { id: 5, name: 'Item5' },
-        { id: 6, name: 'Item6' },
-        { id: 7, name: 'Item7' },
-        { id: 8, name: 'Item8' },
-        { id: 9, name: 'Item9' },
-        { id: 10, name: 'Item10' },
-        { id: 11, name: 'Item11' },
-        { id: 12, name: 'Item12' },
-        { id: 13, name: 'Item13' },
-        { id: 14, name: 'Item14' },
+        { id: 1, name: 'HTML' },
+        { id: 2, name: 'CSS' },
+        { id: 3, name: 'JavaScript' },
+        { id: 4, name: 'C++' },
+        { id: 5, name: 'Python' },
+        { id: 6, name: 'Java' },
+        { id: 7, name: 'PHP' },
+        { id: 8, name: 'NodeJS' },
+        { id: 9, name: 'MySQL' },
+        { id: 10, name: 'MongoDB' },
+        { id: 11, name: 'Boostrap' },
+        { id: 12, name: 'Sass' },
+        { id: 13, name: 'ReactJS' },
+        { id: 14, name: 'VueJS' },
         { id: 15, name: 'Item15' },
         { id: 16, name: 'Item16' }
     ]
@@ -32,17 +32,30 @@ function SidebarMenu(){
                     </ul>
                 ))}
                 </div>
-                {/* <div className='conttenOther'>
+                <div className='conttenOther'>
+                    <div>
+                    <h4>Dịch vụ</h4>
                     <ul>
-                        <li>Nội dung thêm</li>
-                        <li>Nội dung thêm</li>
-                        <li>Nội dung thêm</li>
-                        <li>Nội dung thêm</li>
-                        <li>Nội dung thêm</li>
-                        <li>Nội dung thêm</li>
+                        <li>Lập trình Web</li>
+                        <li>Lập trình Mobile App</li>
+                        <li>Lập trình Nhúng</li>
                     </ul>
-                </div> */}
+                    </div>
+                    <div>
+                    <h4>Tin tức công nghệ</h4>
+                    <ul>
+                        <li>Công nghệ mới</li>
+                        <li>Hỏi đáp công nghệ</li>
+                    </ul>
+                    </div>
+                </div>
                 <div className='listBottom'>
+                    <ul>
+                        <li>Giới thiệu</li>
+                    </ul>
+                    <ul>
+                        <li>Liên hệ: 0859737366</li>
+                    </ul>
                     <ul>
                         <li>Cài đặt</li>
                         <li>Đăng xuất</li>

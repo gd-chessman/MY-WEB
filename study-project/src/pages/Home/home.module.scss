@@ -264,12 +264,12 @@ html{
 }
 .navLanguage ul{
     display: flex;
-    margin: 6px;
-    margin-left: 4px;
+    margin: 4px;
+    // margin-left: 4px;
 }
 .navLanguage ul li{
     display: block;
-    min-width: 100px;
+    min-width: 96px;
     margin: 0 4px;
     padding: 4px;
     border: 1px solid #dcdcdc;
@@ -278,6 +278,7 @@ html{
     background-color: white;
     text-align: center;
 }
+
 .navLanguage ul li:hover{
     cursor: pointer;
     border: 1px solid blue;
@@ -393,7 +394,9 @@ html{
     margin-top: 6px;
     margin-bottom: 20px;
 }
-
+.footerContent ul li{
+    line-height: 1.5rem;
+}
 .footerContent a {
     color: black;
 }
@@ -404,6 +407,7 @@ html{
 }
 
 .footerContent .linkInfor {
+    margin-top: 8px;
     display: flex;
     justify-content: space-between;
 }
