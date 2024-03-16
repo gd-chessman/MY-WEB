@@ -128,7 +128,11 @@ function Home() {
                             </li>
                             <li><a href="">Hỏi&nbsp;đáp</a></li>
                             <li><a href="./login.html">Tài&nbsp;khoản</a></li>
-                            <li onClick={()=>setSibar(!sidebar)} ><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="32px" height="32px" color='#cbd5e1'><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg></li>
+                            <li onClick={() => setSibar(!sidebar)}>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="32px" height="32px" color='#cbd5e1' style={{ cursor: 'pointer' }}>
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/>
+                                </svg>
+                            </li>             
                         </ul>
                     </nav>
                 </div>

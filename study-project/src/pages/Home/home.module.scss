@@ -462,8 +462,10 @@ html{
     width: 28px;
 }
 .sidebarClose{
-    color: #00F260;
-    background-color: #111;
+    // color: #00F260;
+    cursor: pointer;
+    color: #cbd5e1;
+    background-color: #0f172a;
     border: none;
     position: fixed;
     z-index: 1100;
