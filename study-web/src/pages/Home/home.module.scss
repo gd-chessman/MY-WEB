@@ -79,6 +79,9 @@ html{
     align-items: center;
     height: 60px;
 }
+.navLinkHeader ul li p{
+    color: white;
+}
 
 .navLinkHeader ul li:nth-child(2)::after{
     content: '';

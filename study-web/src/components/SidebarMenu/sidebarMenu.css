@@ -60,6 +60,9 @@
 .sidebarMenu .conttenOther ul li{
     padding: 4px 0;
 }
+.sidebarMenu .conttenOther ul li a{
+    color: black;
+}
 .sidebarMenu .listBottom{
     padding: 8px;
 }

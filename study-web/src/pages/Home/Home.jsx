@@ -108,11 +108,11 @@ function Home() {
                         <ul className={styles.nav}>
                             <li className={styles.logo}><a href="/"><img src={avartar} width="32px" style={{ borderRadius: 4 }} alt=""/>&nbsp;Chessman</a></li>
                             <li>
-                                <a href="">Dịch&nbsp;vụ</a>
+                                <p>Dịch&nbsp;vụ</p>
                                 <div className={styles.navService}>
-                                    <a href="">Lập trình Web</a>
-                                    <a href="">Lập trình Mobile</a>
-                                    <a href="">Lập trình Nhúng</a>
+                                    <a href="https://web.levanquy.com/">Lập trình Web</a>
+                                    <a href="https://app.levanquy.com/">Lập trình App</a>
+                                    <a href="https://embedded.levanquy.com/">Lập trình Nhúng</a>
                                 </div>
                             </li>
                             <li><a href="">Tin&nbsp;tức</a></li>
