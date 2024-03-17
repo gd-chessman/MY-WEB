@@ -111,7 +111,7 @@ function Home() {
                                 <p>Dịch&nbsp;vụ</p>
                                 <div className={styles.navService}>
                                     <a href="https://web.levanquy.com/">Lập trình Web</a>
-                                    <a href="https://app.levanquy.com/">Lập trình App</a>
+                                    <a href="https://mobile.levanquy.com/">Lập trình Mobile</a>
                                     <a href="https://embedded.levanquy.com/">Lập trình Nhúng</a>
                                 </div>
                             </li>
