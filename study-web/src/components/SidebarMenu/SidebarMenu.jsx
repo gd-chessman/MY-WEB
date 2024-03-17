@@ -37,7 +37,7 @@ function SidebarMenu(){
                     <h4>Dịch vụ</h4>
                     <ul>
                         <li><a href="https://web.levanquy.com/">Lập trình Web</a></li>
-                        <li><a href="https://app.levanquy.com/">Lập trình App</a></li>
+                        <li><a href="https://mobile.levanquy.com/">Lập trình Mobile</a></li>
                         <li><a href="https://embedded.levanquy.com/">Lập trình Nhúng</a></li>
                     </ul>
                     </div>
