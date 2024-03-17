@@ -16,6 +16,7 @@
     bottom: 0;
     animation: findIn 0.4s ease;
     padding: 0.8rem;
+    overflow-y: auto;
     
 }
 .sidebarMenu .myAccount{
@@ -43,7 +44,6 @@
     padding: 8px;
     width: 100%;
     text-align: center;
-
 }
 .sidebarMenu .conttenOther{
     padding: 8px;

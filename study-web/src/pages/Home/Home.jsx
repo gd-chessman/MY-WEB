@@ -198,7 +198,7 @@ function Home() {
                             <li>NodeJS</li>
                             <li>MySQL</li>
                             <li>MongoDB</li>
-                            <li>Bootstrap 5</li>
+                            <li>Bootstrap</li>
                             <li>Sass</li>
                             <li>ReactJS</li>
                             <li>VueJS</li>
