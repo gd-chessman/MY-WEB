@@ -1,6 +1,6 @@
 {
-  "homepage": "https://levanquy.com/",
-  "name": "study-project",
+  "homepage": "https://web.levanquy.com/",
+  "name": "study-web",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b pages-study-project -d build"
+    "deploy": "gh-pages -b pages-study-web -d build"
   },
   "eslintConfig": {
     "extends": [
