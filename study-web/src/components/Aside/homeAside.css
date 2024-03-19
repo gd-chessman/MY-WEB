@@ -1,4 +1,4 @@
-svg{
+svg.ionicon-aside{
     width: 1.58rem;
     height: 1.58rem;
     margin: auto;
@@ -38,4 +38,10 @@ svg{
 .content.bottom{
     
     /* border-top: 1px solid #dcdcdc; */
+}
+
+@media print, screen and (max-width: 992px){  
+    .homeSidebar{
+        display: none;
+    }
 }

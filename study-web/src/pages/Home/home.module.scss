@@ -77,7 +77,7 @@ html{
     display: flex;
     align-items: center;
     height: 60px;
-    font-size: 1.05rem;
+    font-size: 1.04rem;
 }
 .navLinkHeader ul li p{
     color: white;
@@ -511,9 +511,7 @@ html{
     .headerTop .navLinkHeader ul li:nth-child(5) {
         display: none;
     }
-    .homeSidebar{
-        display: none;
-    }
+
     #main{
         width: 100%;
         margin-left: 0;
