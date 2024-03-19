@@ -33,6 +33,7 @@ import zaloIcon from '../../assets/icons/icons8-zalo-480.png';
 import tiktokIcon from '../../assets/icons/tiktok.png';
 import youtubeIcon from '../../assets/icons/youtube.png';
 import SidebarMenu from '../../components/SidebarMenu/SidebarMenu';
+import HomeAside from '../../components/Aside/HomeAside';
 
 
 function Home() {
@@ -144,12 +145,7 @@ function Home() {
                 </div>
             }
             <div className={styles.appWithSidebar} >
-            <aside className={styles.homeSidebar}>
-                <h5 style={{marginBottom: 40,marginTop: 40}}>HOME</h5>
-                <h5 style={{marginBottom: 40}}>POST</h5>
-                <h5 style={{marginBottom: 40}}>SETTING</h5>
-                <h5 style={{marginBottom: 40}}>OTHER</h5>
-            </aside>   
+            <HomeAside />
             <main id={styles.main}>
             <div id="sliderImage">
                 <div className="slider">
