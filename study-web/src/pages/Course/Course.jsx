@@ -54,66 +54,19 @@ function Course(){
           <h2 style={{ color: "rgb(0, 0, 164)", textAlign: "center" }}>
             1. Tổng quan Spring MVC
           </h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Mục</th>
-                <th>Nội dung</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Khái niệm và ý nghĩa của Framework</td>
-                <td>
-                  Là ứng dụng có tính trừu tượng cao cung cấp các tính năng để phát
-                  triển ứng dụng 1 cách nhanh chóng
-                </td>
-              </tr>
-              <tr>
-                <td>Phân biệt Framework và Libary</td>
-                <td>Điểm khác biệt lớn nhất Framework và Libary nằm ở cơ chế IOC</td>
-              </tr>
-              <tr>
-                <td>Các thành phần của Spring Framework</td>
-                <td>
-                  Các thành phần chính:
-                  <p>
-                    Data access: kết nối và tương tác với database <br />
-                    Web: module hỗ trợ xây dựng web <br />
-                    AOP/Aspects: Beans: xương sống của Spring core <br />
-                    Singleton: sử dụng cơ chế DI để tiêm <br />
-                    Core: chứa IOC và DI <br />
-                    Context: nơi mọi thứ được kết nối với nhau <br />
-                    SpEL: ngôn ngữ cấu hình Spring <br />
-                    Test: dành cho việc testing
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>Tổng quan về Spring MVC</td>
-                <td>
-                  Điểm khác nhau lớn nhất giữa Spring MVC và MVC nằm ở FrontController
-                </td>
-              </tr>
-              <tr>
-                <td>Khái niệm về View Resorve</td>
-                <td>Là đối tượng ánh xạ tên view thành đối tượng view tương ứng</td>
-              </tr>
-            </tbody>
-          </table>
           
-    <div>
-      <h4>Nội dung bài học</h4>
-      <ul>
-        {lessons.map(lesson => (
-          <li key={lesson.id}>
-            <h3>{lesson.title}</h3>
-            <p>{lesson.content}</p>
-            <p><strong>Course:</strong> {lesson.course.name}</p>
-          </li>
-        ))}
-      </ul>
-    </div>
+          <div>
+            <h4>Nội dung bài học</h4>
+            <ul>
+              {lessons.map(lesson => (
+                <li key={lesson.id}>
+                  <h3>{lesson.title}</h3>
+                  <p>{lesson.content}</p>
+                  <p><strong>Course:</strong> {lesson.course.name}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
 
         </main>
         {sidebar && <SidebarCourse />}

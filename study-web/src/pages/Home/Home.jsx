@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import '../../assets/css/global.css'
 import styles from './home.module.scss';
 
-import avartar from '../../assets/icons/avatar.png';
 import img1 from '../../assets/img/img1.gif';
 import img2 from '../../assets/img/img2.png';
 import img3 from '../../assets/img/img3.png';
@@ -21,17 +20,14 @@ import frontEnd from '../../assets/icons/frontend.png';
 import backEnd from '../../assets/icons/backend.png';
 import other from '../../assets/icons/code.png';
 
-import htmlIcon from '../../assets/icons/html.png';
 import cssIcon from '../../assets/icons/css.jpg';
 import jsIcon from '../../assets/icons/javascript.png';
 import reactJS from '../../assets/img/react-logo.png';
 import bootstrap from '../../assets/img/bootstrap.png';
 
-import fbIcon from '../../assets/icons/facebook.png';
-import zaloIcon from '../../assets/icons/icons8-zalo-480.png';
-import tiktokIcon from '../../assets/icons/tiktok.png';
-import youtubeIcon from '../../assets/icons/youtube.png';
-import SidebarMenu from '../../components/SidebarMenu/SidebarMenu';
+import HeaderHome from '../../components/Header/HeaderHome';
+import ScrollTop from '../../components/ScrollTop/ScrollTop';
+import FooterHome from '../../components/Footer/FooterHome';
 import HomeAside from '../../components/Aside/HomeAside';
 
 const courses = [
@@ -138,214 +134,132 @@ function Home() {
     }
     return (
         <div id={styles.app}>
-            <header id={styles.header}>
-                <div className={styles.headerTop}>
-                    <nav className={styles.navLinkHeader}>
-                        <ul className={styles.nav}>
-                            <li className={styles.logo}><a href="/"><img src={avartar} width="32px" style={{ borderRadius: 4 }} alt=""/>&nbsp;Chessman</a></li>
-                            <li>
-                                <p>Dịch&nbsp;vụ</p>
-                                <div className={styles.navService}>
-                                    <a href="https://web.levanquy.com/">Lập trình Web</a>
-                                    <a href="https://mobile.levanquy.com/">Lập trình Mobile</a>
-                                    <a href="https://embedded.levanquy.com/">Lập trình Nhúng</a>
-                                </div>
-                            </li>
-                            <li><a href="">Tin&nbsp;tức</a></li>
-                            <li>
-                                <div className={styles.group}>
-                                    <svg viewBox="0 0 24 24" aria-hidden="true" className={styles.iconSearch}>
-                                        <g>
-                                            <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
-                                        </g>
-                                    </svg>
-                                    <input className={styles.inputDesktop} type="search" placeholder="Tìm kiếm"/>
-                                </div>
-                            </li>
-                            <li><a href="">Hỏi&nbsp;đáp</a></li>
-                            <li><a href="./login.html">Tài&nbsp;khoản</a></li>
-                            <li onClick={() => setSibar(!sidebar)}>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="32px" height="32px" color='#cbd5e1' style={{ cursor: 'pointer' }}>
-                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/>
-                                </svg>
-                            </li>             
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            {sidebar && <SidebarMenu />}
-            {sidebar && 
-                <div>
-                    <button onClick={()=>setSibar(!sidebar)} className={styles.sidebarClose}>X</button>
-                </div>
-            }
+            <HeaderHome />
             <div className={styles.appWithSidebar} >
-            <HomeAside />
-            <main id={styles.main}>
-            <div id="sliderImage">
-                <div className="slider">
-                    <div className="list">
-                    <div className="item">
-                        <img src={img1} alt />
+                <HomeAside />
+                <main id={styles.main}>
+                <div id="sliderImage">
+                    <div className="slider">
+                        <div className="list">
+                        <div className="item">
+                            <img src={img1} alt />
+                        </div>
+                        <div className="item">
+                            <img src={img2} alt />
+                        </div>
+                        <div className="item">
+                            <img src={img3} alt />
+                        </div>
+                        <div className="item">
+                            <a href="https://levanquy0101.github.io/My-Portfolio/" target="_blank">
+                            <img src={img4} alt />
+                            </a>
+                        </div>
+                        <div className="item">
+                            <img src={img5} alt />
+                        </div>
+                        </div>
+                        <div className="buttons">
+                        <button id="prev">&lt;</button>
+                        <button id="next">&gt;</button>
+                        </div>
+                        <ul className="dots">
+                        <li className="active" />
+                        <li />
+                        <li />
+                        <li />
+                        <li />
+                        </ul>
                     </div>
-                    <div className="item">
-                        <img src={img2} alt />
+                </div>
+                    <div className={styles.listLanguage}>
+                        <nav className={styles.navLanguage}>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>C++</li>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>PHP</li>
+                                <li>NodeJS</li>
+                                <li>MySQL</li>
+                                <li>MongoDB</li>
+                                <li>Bootstrap</li>
+                                <li>Sass</li>
+                                <li>ReactJS</li>
+                                <li>VueJS</li>
+                            </ul>
+                        </nav>
                     </div>
-                    <div className="item">
-                        <img src={img3} alt />
-                    </div>
-                    <div className="item">
-                        <a href="https://levanquy0101.github.io/My-Portfolio/" target="_blank">
-                        <img src={img4} alt />
+                    <div className={styles.menuTop}>
+                        <a href="" className={styles.navItem}>
+                            <div className={styles.boxIcon}>
+                                <img src={hot} alt="" width="42px" height="42px" />
+                            </div>
+                            <p>Khóa Hot</p>
+                        </a>
+                        <a href="#full-stack" className={styles.navItem}>
+                            <div className={styles.boxIcon}>
+                                <img src={fullStack} alt="" width="42px" height="42px" />
+                            </div>
+                            <p>Full Stack</p>
+                        </a>
+                        <a href="#front-end" className={styles.navItem}>
+                            <div className={styles.boxIcon}>
+                                <img src={frontEnd} alt="" width="42px" height="42px" />
+                            </div>
+                            <p>FrontEnd</p>
+                        </a>
+                        <a href="#back-end" className={styles.navItem}>
+                            <div className={styles.boxIcon}>
+                                <img src={backEnd} alt="" width="42px" height="42px" />
+                            </div>
+                            <p>BackEnd</p>
+                        </a>
+                        <a href="" className={styles.navItem}>
+                            <div className={styles.boxIcon}>
+                                <img src={other} alt="" width="42px" height="42px" />
+                            </div>
+                            <p>Khác</p>
                         </a>
                     </div>
-                    <div className="item">
-                        <img src={img5} alt />
+                    {/* Code phần thùng chứa khóa học */}
+                    <div className={styles.container}>
+                    {courses.map(course => (
+                        <div key={course.id}>
+                        <h2 id={course.id}>{course.title}</h2>
+                        <div className={styles.course}>
+                            {course.modules.map(module => (
+                            <div key={module.id} className={styles.nameCourse}>
+                                {module.link ? (
+                                <Link to={module.link}>
+                                    <figure>
+                                    <img src={module.imgSrc} alt={module.name} width="100%" />
+                                    </figure>
+                                    <figcaption>{module.name}</figcaption>
+                                </Link>
+                                ) : (
+                                <a href="">
+                                    <figure>
+                                    <img src={module.imgSrc} alt={module.name} width="100%" />
+                                    </figure>
+                                    <figcaption>{module.name}</figcaption>
+                                </a>
+                                )}
+                            </div>
+                            ))}
+                        </div>
+                        </div>
+                    ))}
                     </div>
-                    </div>
-                    <div className="buttons">
-                    <button id="prev">&lt;</button>
-                    <button id="next">&gt;</button>
-                    </div>
-                    <ul className="dots">
-                    <li className="active" />
-                    <li />
-                    <li />
-                    <li />
-                    <li />
-                    </ul>
-                </div>
+                </main>
             </div>
-                <div className={styles.listLanguage}>
-                    <nav className={styles.navLanguage}>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>C++</li>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>PHP</li>
-                            <li>NodeJS</li>
-                            <li>MySQL</li>
-                            <li>MongoDB</li>
-                            <li>Bootstrap</li>
-                            <li>Sass</li>
-                            <li>ReactJS</li>
-                            <li>VueJS</li>
-                        </ul>
-                    </nav>
-                </div>
-                <div className={styles.menuTop}>
-                    <a href="" className={styles.navItem}>
-                        <div className={styles.boxIcon}>
-                            <img src={hot} alt="" width="42px" height="42px" />
-                        </div>
-                        <p>Khóa Hot</p>
-                    </a>
-                    <a href="#full-stack" className={styles.navItem}>
-                        <div className={styles.boxIcon}>
-                            <img src={fullStack} alt="" width="42px" height="42px" />
-                        </div>
-                        <p>Full Stack</p>
-                    </a>
-                    <a href="#front-end" className={styles.navItem}>
-                        <div className={styles.boxIcon}>
-                            <img src={frontEnd} alt="" width="42px" height="42px" />
-                        </div>
-                        <p>FrontEnd</p>
-                    </a>
-                    <a href="#back-end" className={styles.navItem}>
-                        <div className={styles.boxIcon}>
-                            <img src={backEnd} alt="" width="42px" height="42px" />
-                        </div>
-                        <p>BackEnd</p>
-                    </a>
-                    <a href="" className={styles.navItem}>
-                        <div className={styles.boxIcon}>
-                            <img src={other} alt="" width="42px" height="42px" />
-                        </div>
-                        <p>Khác</p>
-                    </a>
-                </div>
-                {/* Code phần thùng chứa khóa học */}
-                <div className={styles.container}>
-                {courses.map(course => (
-                    <div key={course.id}>
-                    <h2 id={course.id}>{course.title}</h2>
-                    <div className={styles.course}>
-                        {course.modules.map(module => (
-                        <div key={module.id} className={styles.nameCourse}>
-                            {module.link ? (
-                            <Link to={module.link}>
-                                <figure>
-                                <img src={module.imgSrc} alt={module.name} width="100%" />
-                                </figure>
-                                <figcaption>{module.name}</figcaption>
-                            </Link>
-                            ) : (
-                            <a href="">
-                                <figure>
-                                <img src={module.imgSrc} alt={module.name} width="100%" />
-                                </figure>
-                                <figcaption>{module.name}</figcaption>
-                            </a>
-                            )}
-                        </div>
-                        ))}
-                    </div>
-                    </div>
-                ))}
-                </div>
-            </main>
-            </div>
-            <scroll-top class="scroll-top">
+            {/* <scroll-top class="scroll-top">
                     <a href="#">&uarr;</a>       
-            </scroll-top>
-            <footer id={styles.footer}>
-                <div className={styles.footerContainer}>
-                    <div className={styles.footerContent}>
-                        <h3>Le Van Quy</h3>
-                        <ul>
-                            <li>Điện thoại: <a href="tel: 0382787721">0382787721</a></li>
-                            <li>Email: <a href="mailto: vannn.quy@gmail.com">vannn.quy@gmail.com</a></li>
-                            <li>Địa chỉ: Đà Nẵng - Việt Nam</li>
-                            <li>Công việc: Là lập trình viên</li>
-                            <li><a href="https://levanquy.com" target="_blank">Portfolio Admin</a></li>
-                        </ul>
-                    </div>
-                    <div className={styles.footerContent}>
-                        <h3>Thông tin web</h3>
-                        <ul>
-                            <li><a href="">Giới thiệu</a></li>
-                            <li><a href="">Liên hệ</a></li>
-                            <li><a href="">Điều khoản & Bảo mật</a></li>
-                            <li><a href="">Góp ý</a></li>
-                        </ul>
-                    </div>
-                    <div className={styles.footerContent}>
-                        <h3>Sản phẩm</h3>
-                        <ul>
-                            <li><a href="">Project 1</a></li>
-                            <li><a href="">Project 2</a></li>
-                            <li><a href="">Project 3</a></li>
-                            <li><a href="">Project 4</a></li>
-                        </ul>
-                    </div>
-                    <div className={styles.footerContent}>
-                        <h3>Liên kết</h3>
-                        <ul className={styles.linkInfor}>
-                            <li><a href="https://www.facebook.com/LeVanQuy0101" target="_blank"><img src={fbIcon} alt=""/></a></li>
-                            <li><a href="zalo.html" target="_blank"><img src={zaloIcon} alt=""/></a></li>
-                            <li><a href="https://www.tiktok.com/@gd_chessman" target="_blank"><img src={tiktokIcon} alt=""/></a></li>
-                            <li><a href="time.html" target="_blank"><img src={youtubeIcon} alt=""/></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div className={styles.footerBottom}>
-                    <p>&copy; Trang web công nghệ được phát triển bởi LE&nbsp;VAN&nbsp;QUY</p>
-                </div>
-            </footer>
+            </scroll-top> */}
+            <ScrollTop />
+            <FooterHome />
         </div>
     );
 }
