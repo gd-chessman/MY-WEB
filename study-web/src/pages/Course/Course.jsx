@@ -3,6 +3,16 @@ import styles from './course.module.scss'
 import avartar from '../../assets/icons/avatar.png';
 import SidebarCourse from './SidebarCourse';
 function Course(){
+  const [lessons, setLessons] = useState([]);
+  useEffect(() => {
+    fetch('http://localhost:8080/course')
+      .then(response => response.json())
+      .then(data => setLessons(data))
+      .catch(error => console.error('Error fetching data:', error));
+  }, []);
+  
+
+  //Sidebar của khóa học
   const [sidebar, setSibar] = useState(false)
   var body = document.querySelector("body")
   if(sidebar == true){
@@ -86,6 +96,17 @@ function Course(){
               </tr>
             </tbody>
           </table>
+<div>
+  <h1>Lesson</h1>
+  <ul>
+    {lessons && lessons.map(lesson => (
+      <li key={lesson.id}>
+        <strong>{lesson.title}</strong> - {lesson.content}
+      </li>
+    ))}
+  </ul>
+</div>
+
         </main>
         {sidebar && <SidebarCourse />}
         {/* Make footer */}
