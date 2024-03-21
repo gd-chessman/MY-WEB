@@ -142,6 +142,9 @@ th, td{
   display: inline-block;
   height: 100%;
 }
+.navFooter ul:last-child li{
+  cursor: pointer;
+}
 
 /* CSS cho các class phụ */
 .iconSize{

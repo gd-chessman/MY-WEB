@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
-import '../global.css'
+import '../../assets/css/global.css'
 import styles from './home.module.scss';
-// import '../../components/SidebarMenu/sidebarMenu.module.scss'
 
 import avartar from '../../assets/icons/avatar.png';
 import img1 from '../../assets/img/img1.gif';
@@ -34,6 +33,42 @@ import tiktokIcon from '../../assets/icons/tiktok.png';
 import youtubeIcon from '../../assets/icons/youtube.png';
 import SidebarMenu from '../../components/SidebarMenu/SidebarMenu';
 import HomeAside from '../../components/Aside/HomeAside';
+
+const courses = [
+    {
+      id: 'full-stack',
+      title: 'Khóa học Web FullStack CodeGym',
+      modules: [
+        { id: 'module1', name: 'Module1', imgSrc: item8, link: '/course/module1' },
+        { id: 'module2', name: 'Module2', imgSrc: item9, link: '/course/module2' },
+        { id: 'module3', name: 'Module3', imgSrc: item10, link: '/course/module3' },
+        { id: 'module4', name: 'Module4', imgSrc: item11, link: '/course/module4' },
+        { id: 'module5', name: 'Module5', imgSrc: item12, link: '/course/module5' },
+        { id: 'module6', name: 'Module6', imgSrc: item13, link: '/course/module6' },
+      ],
+    },
+    {
+      id: 'front-end',
+      title: 'Khóa học FrontEnd',
+      modules: [
+        { id: 'html', name: 'HTML', imgSrc: 'https://topviecit.vn/blog/wp-content/uploads/2021/11/thumb-5.jpg' ,link: '/course/html'},
+        { id: 'css', name: 'CSS', imgSrc: cssIcon, link: '/course/css' },
+        { id: 'javascript', name: 'Javascript', imgSrc: jsIcon, link: '/course/javascript' },
+        { id: 'bootstrap', name: 'Bootstrap', imgSrc: bootstrap, link: '/course/bootstrap' },
+        { id: 'reactJS', name: 'ReactJS', imgSrc: reactJS, link: '/course/reactjs' },
+        { id: 'vueJS', name: 'VueJS', imgSrc: 'https://api.otakoyi.software/uploads/content/2023/11/20/1280/vuejs-and-seo--your-steps-to-take-to-become-more-seo-friendly-317x237.webp', link: '/course/vuejs' },
+      ],
+    },
+    {
+      id: 'back-end',
+      title: 'Khóa học BackEnd',
+      modules: [
+        { id: 'nodeJS', name: 'NodeJS', imgSrc: 'https://colorlib.com/wp/wp-content/uploads/sites/2/node.js-logo.png', link: '/course/nodejs' },
+        { id: 'java', name: 'Java', imgSrc: 'https://unica.vn/media/imagesck/1624420787_Java-Core-la-gi.jpg?v=1624420787', link: '/course/java' },
+      ],
+    },
+  ];
+
 
 
 function Home() {
@@ -233,128 +268,34 @@ function Home() {
                         <p>Khác</p>
                     </a>
                 </div>
+                {/* Code phần thùng chứa khóa học */}
                 <div className={styles.container}>
-                    <h2 id='full-stack'>Khóa học Web FullStack CodeGym</h2>
+                {courses.map(course => (
+                    <div key={course.id}>
+                    <h2 id={course.id}>{course.title}</h2>
                     <div className={styles.course}>
-                        <div className={styles.nameCourse}>
-                            <a href="">
+                        {course.modules.map(module => (
+                        <div key={module.id} className={styles.nameCourse}>
+                            {module.link ? (
+                            <Link to={module.link}>
                                 <figure>
-                                    <img src={item8} alt="" width="100%"/>
+                                <img src={module.imgSrc} alt={module.name} width="100%" />
                                 </figure>
-                                <figcaption>Module1</figcaption>
-                            </a>
-                        </div>
-                        <div className={styles.nameCourse}>
-                            <a href="">
-                                <figure>
-                                    <img src={item9} alt="" width="100%"/>
-                                </figure>
-                                <figcaption>Module2</figcaption>
-                            </a>
-                        </div>
-                        <div className={styles.nameCourse}>
-                            <a href="">
-                                <figure>
-                                    <img src={item10} alt="" width="100%"/>
-                                </figure>
-                                <figcaption>Module3</figcaption>
-                            </a>
-                        </div>
-                        <div className={styles.nameCourse}>
-                            <Link to="/course">
-                                <figure>
-                                    <img src={item11} alt="" width="100%"/>
-                                </figure>
-                                <figcaption>Module4</figcaption>
+                                <figcaption>{module.name}</figcaption>
                             </Link>
-                        </div>
-                        <div className={styles.nameCourse}>
-                            <Link to="/content">
-                                <figure>
-                                    <img src={item12} alt="" width="100%"/>
-                                </figure>
-                                <figcaption>Module5</figcaption>
-                            </Link>
-                        </div>
-                        <div className={styles.nameCourse}>
+                            ) : (
                             <a href="">
                                 <figure>
-                                    <img src={item13} alt="" width="100%"/>
+                                <img src={module.imgSrc} alt={module.name} width="100%" />
                                 </figure>
-                                <figcaption>Module6</figcaption>
+                                <figcaption>{module.name}</figcaption>
                             </a>
+                            )}
                         </div>
+                        ))}
                     </div>
-                    <h2 id='front-end'>Khóa học FrontEnd</h2>
-                    <div className={styles.course}>
-                        <div className={styles.nameCourse}>
-                            <a href="">
-                                <figure>
-                                    <img src='https://topviecit.vn/blog/wp-content/uploads/2021/11/thumb-5.jpg' alt="" width="100%"/>
-                                </figure>
-                                <figcaption>HTML</figcaption>
-                            </a>
-                        </div>
-                        <div className={styles.nameCourse}>
-                            <a href="">
-                                <figure>
-                                    <img src={cssIcon} alt="" width="100%"/>
-                                </figure>
-                                <figcaption>CSS</figcaption>
-                            </a>
-                        </div>
-                        <div className={styles.nameCourse}>
-                            <a href="">
-                                <figure>
-                                    <img src={jsIcon} alt="" width="100%"/>
-                                </figure>
-                                <figcaption>Javascript</figcaption>
-                            </a>
-                        </div>
-                        <div className={styles.nameCourse}>
-                            <a href="">
-                                <figure>
-                                    <img src={bootstrap} alt="" width="100%"/>
-                                </figure>
-                                <figcaption>Bootstrap</figcaption>
-                            </a>
-                        </div>
-                        <div className={styles.nameCourse}>
-                            <a href="">
-                                <figure>
-                                    <img src={reactJS} alt="" width="100%"/>
-                                </figure>
-                                <figcaption>ReactJS</figcaption>
-                            </a>
-                        </div>
-                        <div className={styles.nameCourse}>
-                            <a href="">
-                                <figure>
-                                    <img src='https://api.otakoyi.software/uploads/content/2023/11/20/1280/vuejs-and-seo--your-steps-to-take-to-become-more-seo-friendly-317x237.webp' alt="" width="100%"/>
-                                </figure>
-                                <figcaption>VueJS</figcaption>
-                            </a>
-                        </div>
                     </div>
-                    <h2 id='back-end'>Khóa học BackEnd</h2>
-                    <div className={styles.course}>
-                        <div className={styles.nameCourse}>
-                            <a href="">
-                                <figure>
-                                    <img src='https://colorlib.com/wp/wp-content/uploads/sites/2/node.js-logo.png' alt="" width="100%"/>
-                                </figure>
-                                <figcaption>NodeJS</figcaption>
-                            </a>
-                        </div>
-                        <div className={styles.nameCourse}>
-                            <a href="">
-                                <figure>
-                                    <img src='https://unica.vn/media/imagesck/1624420787_Java-Core-la-gi.jpg?v=1624420787' alt="" width="100%"/>
-                                </figure>
-                                <figcaption>Java</figcaption>
-                            </a>
-                        </div>
-                    </div>
+                ))}
                 </div>
             </main>
             </div>
