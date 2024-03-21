@@ -4,10 +4,7 @@ import com.example.swbackend.models.Lesson;
 import com.example.swbackend.services.ILessonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -17,9 +14,12 @@ import java.util.List;
 public class LessonController {
     @Autowired
     private ILessonService iLessonService;
-    @GetMapping("")
+    @GetMapping("/{name}")
     @ResponseBody
-    public List<Lesson> showLesson(){
-        return iLessonService.findAll();
+    public List<Lesson> showLesson(@PathVariable String name) {
+//        String courseName = name.toLowerCase();
+        List<Lesson> lessonList = iLessonService.findByCourseName(name);
+//        System.out.println(courseName);
+        return lessonList;
     }
 }

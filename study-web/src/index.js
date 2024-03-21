@@ -5,11 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <Router>
       <App />
     </Router>
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 
 reportWebVitals();
