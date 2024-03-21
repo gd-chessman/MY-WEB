@@ -202,38 +202,21 @@ html{
 /* Responsive */
 /* Large desktop screens */
 @media screen and (min-width: 1920px) {
-    /* Add styles here */
+    
 }
 
 /* Large desktop screens */
 @media screen and (max-width: 1492px) {
-    /* Add styles here */
-    .navLinkHeader .nav li:first-child > a {
-        font-size: 1.2rem !important;
-    }
+
 }
 
 /* Desktop screens */
 @media screen and (max-width: 1200px) {
-    /* Add styles here */
-    .navLinkHeader .nav li:first-child > a {
-        font-size: 0 !important;
-    }
 
-    .headerTop .navLinkHeader ul {
-        justify-content: space-between;
-    }
 }
 
 /* Large tablets */
 @media print, screen and (max-width: 992px) {
-    .headerTop .navLinkHeader ul li:nth-child(3) {
-        display: none;
-    }
-    .headerTop .navLinkHeader ul li:nth-child(5) {
-        display: none;
-    }
-
     #main{
         width: 100%;
         margin-left: 0;
@@ -244,12 +227,6 @@ html{
     .nameCourse {
         width: 32.3%;
     }
-    .navLinkHeader .nav li:first-child > a {
-        font-size: 1.2rem !important;
-    }
-    .navLinkHeader .group{
-        width: 280px;
-    }
 }
 
 /* Tablets */
@@ -257,43 +234,15 @@ html{
     .slider {
         height: 220px;
     }
-    .headerTop .navLinkHeader ul li:nth-child(2) {
-        display: none;
-    }
-    .headerTop .navLinkHeader ul li:nth-child(6) {
-        display: none;
-    }
-
-    .navLinkHeader .group{
-        width: 310px;
-    }
-
 }
 
 /* Mobile */
 @media print, screen and (max-width: 534px) {
-    .headerTop ul li:first-child {
-        font-size: large;
-        white-space: nowrap;
-    }
-    .headerTop ul {
-        justify-content: space-between;
-    }
     #main{
         padding: 0;
     }
-    .navLinkHeader ul li:nth-child(4) {
-        width: 100%;
-    }
-    .navLinkHeader .group {
-        width: min(300px, 100%);
-        width: 150%;
-    }
     .nameCourse {
         width: 49%;
-    }
-    .navLinkHeader .nav li:first-child > a {
-        font-size: 0 !important;
     }
     
 }
