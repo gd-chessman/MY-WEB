@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './sidebarMenu.css'
 
 function SidebarMenu(){
@@ -23,7 +24,7 @@ function SidebarMenu(){
         <div id='frameSidebar'>
             <div className='sidebarMenu'>
                 <div className='myAccount'>
-                    Tài khoản
+                    <Link to="/login">Tài khoản</Link>
                 </div>
                 <div className='listNav'>
                 {sidebarNavs.map(sidebarNav =>(
