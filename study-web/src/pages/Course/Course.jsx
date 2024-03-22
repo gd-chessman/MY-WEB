@@ -10,7 +10,7 @@ function Course(){
   const { courseName } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:8080/course/${courseName}`)
+    fetch(`http://10.10.8.116:8080/course/${courseName}`)
       .then(response => response.json())
       .then(data => setLessons(data))
       .catch(error => console.error('Error fetching data:', error));
@@ -52,7 +52,7 @@ function Course(){
         {/* Make Main */}
         <main id={styles.main}>
           <h2 style={{ color: "rgb(0, 0, 164)", textAlign: "center" }}>
-            1. Tổng quan Spring MVC
+            1. Tổng quan
           </h2>
           
           <div>

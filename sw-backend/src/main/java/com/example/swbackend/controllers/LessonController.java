@@ -17,9 +17,7 @@ public class LessonController {
     @GetMapping("/{name}")
     @ResponseBody
     public List<Lesson> showLesson(@PathVariable String name) {
-//        String courseName = name.toLowerCase();
         List<Lesson> lessonList = iLessonService.findByCourseName(name);
-//        System.out.println(courseName);
         return lessonList;
     }
 }

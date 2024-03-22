@@ -6,6 +6,7 @@ import Profile from './pages/Profile/Profile';
 import Bookmark from './pages/Bookmark/Bookmark';
 import ChatAi from './pages/ChatAI/ChatAi';
 import Extension from './pages/Extension/Extension';
+import Signup from './pages/Signup/Signup';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/bookmark' element={<Bookmark />} />
         <Route path='/chatai' element={<ChatAi />} />
         <Route path='/extension' element={<Extension />} />
+        <Route path='/signup' element={<Signup />} />
         <Route path='/login' element={<Login />} />
       </Routes>
   );
