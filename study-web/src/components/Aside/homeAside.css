@@ -23,9 +23,9 @@ svg.ionicon-aside{
     justify-content: center;
     color: whitesmoke;
 }
-.homeSidebar .content:first-child{
+.active .content{
     background-color: rgba(108, 133, 193, 0.4);
-}
+  }
 .homeSidebar .content:hover{
     cursor: pointer;
     background-color: rgba(108, 133, 193, 0.4);

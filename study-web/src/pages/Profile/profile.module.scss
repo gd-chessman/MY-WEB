@@ -1,0 +1,55 @@
+ // CSS tổng thể phần giữa trang web
+ .appWithSidebar{
+    display: flex;
+    width: 100%;
+    margin-top: 61px;
+    background-color: #0f172a;
+}
+#main {
+    width: 93%;
+    min-height: 80vh;
+    background-color: white;
+    margin-left: 7%;
+}
+
+/* Responsive */
+/* Large desktop screens */
+@media screen and (min-width: 1920px) {
+    
+}
+
+/* Large desktop screens */
+@media screen and (max-width: 1492px) {
+
+}
+
+/* Desktop screens */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* Large tablets */
+@media print, screen and (max-width: 992px) {
+    #main{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Tablets */
+@media print, screen and (max-width: 768px) {
+
+}
+
+/* Mobile */
+@media print, screen and (max-width: 534px) {
+    #main{
+        padding: 0;
+    }
+    
+}
+
+/* Extra small mobile devices */
+@media screen and (max-width: 320px) {
+
+}

@@ -255,9 +255,6 @@ function Home() {
                     </div>
                 </main>
             </div>
-            {/* <scroll-top class="scroll-top">
-                    <a href="#">&uarr;</a>       
-            </scroll-top> */}
             <ScrollTop />
             <FooterHome />
         </div>
