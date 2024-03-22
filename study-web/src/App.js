@@ -6,7 +6,6 @@ import Profile from './pages/Profile/Profile';
 import Bookmark from './pages/Bookmark/Bookmark';
 import ChatAi from './pages/ChatAI/ChatAi';
 import Extension from './pages/Extension/Extension';
-// import './App.css';
 
 function App() {
   return (

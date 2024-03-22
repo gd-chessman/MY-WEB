@@ -22,7 +22,6 @@ body::-webkit-scrollbar-track {
       margin: auto;
       position: relative;
       overflow: hidden;
-      /* border-radius: 0.5rem; */
   }
   .slider .list{
       position: absolute;
@@ -90,7 +89,6 @@ body::-webkit-scrollbar-track {
       opacity: 1;
   }
 /* CSS cho phần khung của sidebar */
-
 
 
   @media screen and (min-width: 1920px) {
