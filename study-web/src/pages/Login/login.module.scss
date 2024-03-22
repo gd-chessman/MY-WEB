@@ -1,16 +1,36 @@
+ // CSS tổng thể phần giữa trang web
+ .appWithSidebar{
+    display: flex;
+    width: 100%;
+    margin-top: 61px;
+    background-color: #0f172a;
+}
+#main {
+    width: 93%;
+    min-height: 94vh;
+    background-color: white;
+    margin-left: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://ben.com.vn/tin-tuc/wp-content/uploads/2020/09/hinh-nen-powerpoint-don-gian-2.jpg") center/cover no-repeat #f0f0f0;
+}
+
+
 .loginBox {
-    width: 350px;
+    width: 400px;
     padding: 40px;
-    margin: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 2px 0px 2px 2px #dcdcdc;
+    margin: 8px;
+    background: rgba(244, 244, 244, 0.8);
+    border-radius: 4px;
+    box-shadow: 2px 0px 2px 2px #888;
+    opacity: 0.9;
   }
   
   .loginBox p:first-child {
     margin: 0 0 40px;
     padding: 0;
-    color: green;
+    color: #0f172a;
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
@@ -46,13 +66,13 @@
     transition: .5s;
   }
   
-  .loginBox .userBox input:focus ~ label,
-  .loginBox .userBox input:valid ~ label {
+  .loginBox .userBox input:focus ~ label{
     top: -20px;
     left: 0;
     color: black;
     font-size: 12px;
   }
+
   
   .loginBox form a {
     position: relative;
@@ -60,8 +80,7 @@
     padding: 10px 20px;
     font-weight: bold;
     color: #f97316;
-    background-color: whitesmoke
-    ;
+    background-color: whitesmoke;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
@@ -74,7 +93,7 @@
   }
   
   .loginBox a:hover {
-    background: black;
+    background-color: #0f172a;
     /* color: #272727; */
   }
   
@@ -182,3 +201,46 @@
     border-radius: 5px;
     font-weight: bold;
   }
+
+  
+/* Responsive */
+/* Large desktop screens */
+@media screen and (min-width: 1920px) {
+    
+}
+
+/* Large desktop screens */
+@media screen and (max-width: 1492px) {
+
+}
+
+/* Desktop screens */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* Large tablets */
+@media print, screen and (max-width: 992px) {
+    #main{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Tablets */
+@media print, screen and (max-width: 768px) {
+
+}
+
+/* Mobile */
+@media print, screen and (max-width: 534px) {
+    #main{
+        padding: 0;
+    }
+    
+}
+
+/* Extra small mobile devices */
+@media screen and (max-width: 320px) {
+
+}

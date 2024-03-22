@@ -9,7 +9,7 @@ import HomeAside from '../../components/Aside/HomeAside';
 
 function Bookmark(){
     return(
-        <div id={styles.app}>
+    <div id={styles.app}>
         <HeaderHome />
         <div className={styles.appWithSidebar} >
             <HomeAside />
