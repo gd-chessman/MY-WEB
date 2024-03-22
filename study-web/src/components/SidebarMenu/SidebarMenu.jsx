@@ -43,9 +43,12 @@ function SidebarMenu(){
                     </ul>
                     </div>
                     <div>
-                    <h4>Tin tức công nghệ</h4>
+                    <h4>Công nghệ mới</h4>
                     <ul>
-                        <li>Công nghệ mới</li>
+                        <li>
+                        <Link to="/chatai">Chat AI</Link>
+                        </li>
+                        <li>Tin tức công nghệ</li>
                         <li>Hỏi đáp công nghệ</li>
                     </ul>
                     </div>
