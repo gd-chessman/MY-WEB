@@ -21,7 +21,7 @@ function Login(){
                     </div>
                     <div className={styles.userBox}>
                     <input required="" name="" type="password" />
-                    <label>Password</label>
+                    <label>Mật khẩu</label>
                     </div>
                     <div className={styles.forgetPass}>Quên mật khẩu!</div>
                     <a href="#">
