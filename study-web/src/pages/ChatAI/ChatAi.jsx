@@ -81,13 +81,6 @@ function ChatAi() {
         </main>
       </div>
         {formkey && <FormKey />}
-        {formkey &&
-        <button onClick={()=>{setFormKey(!formkey)}} className={styles.close}>Đóng</button>
-        }
-
-      <div>
-        
-      </div>
       <ScrollTop />
       <FooterHome />
     </div>
