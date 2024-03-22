@@ -7,6 +7,7 @@ import Bookmark from './pages/Bookmark/Bookmark';
 import ChatAi from './pages/ChatAI/ChatAi';
 import Extension from './pages/Extension/Extension';
 import Signup from './pages/Signup/Signup';
+import Editer from './pages/Editor/Editer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/extension' element={<Extension />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/edit' element={<Editer />} />
       </Routes>
   );
 }
