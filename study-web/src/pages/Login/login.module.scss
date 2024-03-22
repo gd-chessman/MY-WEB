@@ -21,9 +21,9 @@
     width: 400px;
     padding: 40px;
     margin: 8px;
-    background: rgba(244, 244, 244, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 4px;
-    box-shadow: 2px 0px 2px 2px #888;
+    box-shadow: 2px 0px 2px 2px #22c55e;
     opacity: 0.9;
   }
   
@@ -67,6 +67,12 @@
   }
   
   .loginBox .userBox input:focus ~ label{
+    top: -20px;
+    left: 0;
+    color: black;
+    font-size: 12px;
+  }
+  .loginBox .userBox input:valid ~ label {
     top: -20px;
     left: 0;
     color: black;
@@ -186,7 +192,8 @@
   }
   
   .loginBox p:last-child {
-    color: #aaa;
+    margin-top: 4px;
+    color: #111;
     font-size: 14px;
   }
   

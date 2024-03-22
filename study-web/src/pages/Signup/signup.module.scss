@@ -17,17 +17,17 @@
 }
 
 
-.loginBox {
+.signupBox {
     width: 400px;
     padding: 40px;
     margin: 8px;
-    background: rgba(244, 244, 244, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 4px;
-    box-shadow: 2px 0px 2px 2px #888;
+    box-shadow: 2px 0px 2px 2px #22c55e;
     opacity: 0.9;
   }
   
-  .loginBox p:first-child {
+  .signupBox p:first-child {
     margin: 0 0 40px;
     padding: 0;
     color: #0f172a;
@@ -39,11 +39,12 @@
     font-family: 'Bungee Spice', sans-serif;
   }
   
-  .loginBox .userBox {
+  .signupBox .userBox {
     position: relative;
   }
+
   
-  .loginBox .userBox input {
+  .signupBox .userBox input {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
@@ -54,8 +55,12 @@
     outline: none;
     background: transparent;
   }
+  // .signupBox .userBox:last-child input{
+  //   border: 1px solid black;
+  //   color: #22c55e;
+  // }
   
-  .loginBox .userBox label {
+  .signupBox .userBox label {
     position: absolute;
     top: 0;
     left: 0;
@@ -66,15 +71,20 @@
     transition: .5s;
   }
   
-  .loginBox .userBox input:focus ~ label{
+  .signupBox .userBox input:focus ~ label{
     top: -20px;
     left: 0;
     color: black;
     font-size: 12px;
   }
-
+  .signupBox .userBox input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: black;
+    font-size: 12px;
+  }
   
-  .loginBox form a {
+  .signupBox form a {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -92,12 +102,12 @@
     border-radius: 5px;
   }
   
-  .loginBox a:hover {
+  .signupBox a:hover {
     background-color: #0f172a;
     /* color: #272727; */
   }
   
-  .loginBox a span {
+  .signupBox a span {
     position: absolute;
     display: block;
   }
@@ -106,7 +116,7 @@
     color: blue;
   }
   
-  .loginBox a span:nth-child(1) {
+  .signupBox a span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
@@ -125,7 +135,7 @@
     }
   }
   
-  .loginBox a span:nth-child(2) {
+  .signupBox a span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
@@ -145,7 +155,7 @@
     }
   }
   
-  .loginBox a span:nth-child(3) {
+  .signupBox a span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -165,7 +175,7 @@
     }
   }
   
-  .loginBox a span:nth-child(4) {
+  .signupBox a span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
@@ -185,17 +195,18 @@
     }
   }
   
-  .loginBox p:last-child {
-    color: #aaa;
+  .signupBox p:last-child {
+    margin-top: 4px;
+    color: #111;
     font-size: 14px;
   }
   
-  .loginBox a.a2 {
+  .signupBox a.a2 {
     color: green;
     text-decoration: none;
   }
   
-  .loginBox a.a2:hover {
+  .signupBox a.a2:hover {
     background: transparent;
     /* color: #aaa; */
     border-radius: 5px;
