@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
-import './homeAside.css'
+import './SidebarHome.css'
 
-function HomeAside(){
+function SidebarHome(){
     return (
     <aside className="homeSidebar">
       <NavLink exact to="/" activeClassName="active">
@@ -47,4 +47,4 @@ function HomeAside(){
     </aside>  
     )
 }
-export default HomeAside;
+export default SidebarHome;

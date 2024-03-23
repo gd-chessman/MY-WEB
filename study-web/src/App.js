@@ -8,6 +8,7 @@ import ChatAi from './pages/ChatAI/ChatAi';
 import Extension from './pages/Extension/Extension';
 import Signup from './pages/Signup/Signup';
 import Editer from './pages/Editor/Editer';
+import AdminDashboard from './pages/Admin/AdminDashboard';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         <Route path='/signup' element={<Signup />} />
         <Route path='/login' element={<Login />} />
         <Route path='/edit' element={<Editer />} />
+
+        <Route path='/admin' element={<AdminDashboard />} />
+
       </Routes>
   );
 }

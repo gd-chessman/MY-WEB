@@ -1,6 +1,10 @@
+import SidebarAdmin from "./components/SidebarAdmin";
+
 function AdminDashboard(){
     return(
-        <div></div>
+        <div>
+           <SidebarAdmin />
+        </div>
     )
 }
 

@@ -28,7 +28,7 @@ import bootstrap from '../../assets/img/bootstrap.png';
 import HeaderHome from '../../components/Header/HeaderHome';
 import ScrollTop from '../../components/ScrollTop/ScrollTop';
 import FooterHome from '../../components/Footer/FooterHome';
-import HomeAside from '../../components/Aside/HomeAside';
+import SidebarHome from '../../components/SidebarHome/SidebarHome';
 
 const courses = [
     {
@@ -136,7 +136,7 @@ function Home() {
         <div id={styles.app}>
             <HeaderHome />
             <div className={styles.appWithSidebar} >
-                <HomeAside />
+                <SidebarHome />
                 <main id={styles.main}>
                 <div id="sliderImage">
                     <div className="slider">
