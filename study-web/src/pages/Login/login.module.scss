@@ -25,7 +25,18 @@
     border-radius: 4px;
     box-shadow: 2px 0px 2px 2px #22c55e;
     opacity: 0.9;
+    animation: moveright 0.5s linear;
   }
+@keyframes moveright {
+  0%{
+    transform: translateX(-200px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+
   
   .loginBox p:first-child {
     margin: 0 0 40px;

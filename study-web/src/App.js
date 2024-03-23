@@ -12,7 +12,7 @@ import Editer from './pages/Editor/Editer';
 function App() {
   return (
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" exact element={<HomePage />} />
         <Route path="/course/:courseName" element={<Course />} />
         <Route path='/profile' element={<Profile />} />
         <Route path='/bookmark' element={<Bookmark />} />
