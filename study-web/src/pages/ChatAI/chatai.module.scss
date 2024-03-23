@@ -7,7 +7,7 @@
 }
 #main {
     width: 93%;
-    min-height: 80vh;
+    min-height: 94vh;
     background-color: white;
     margin-left: 7%;
     background: url("https://ben.com.vn/tin-tuc/wp-content/uploads/2020/09/hinh-nen-powerpoint-don-gian-2.jpg") center/cover no-repeat #f0f0f0;
@@ -51,7 +51,7 @@
 }
 .open{
     margin-left: 1rem;
-    position: fixed;
+    position: relative;
 
     z-index: 502;
 }

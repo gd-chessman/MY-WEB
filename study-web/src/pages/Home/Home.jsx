@@ -193,7 +193,7 @@ function Home() {
                         </nav>
                     </div>
                     <div className={styles.menuTop}>
-                        <a href="" className={styles.navItem}>
+                        <a href="#course-hot" className={styles.navItem}>
                             <div className={styles.boxIcon}>
                                 <img src={hot} alt="" width="42px" height="42px" />
                             </div>
@@ -217,7 +217,7 @@ function Home() {
                             </div>
                             <p>BackEnd</p>
                         </a>
-                        <a href="" className={styles.navItem}>
+                        <a href="course-other" className={styles.navItem}>
                             <div className={styles.boxIcon}>
                                 <img src={other} alt="" width="42px" height="42px" />
                             </div>
@@ -227,8 +227,8 @@ function Home() {
                     {/* Code phần thùng chứa khóa học */}
                     <div className={styles.container}>
                     {courses.map(course => (
-                        <div key={course.id}>
-                        <h2 id={course.id}>{course.title}</h2>
+                        <div key={course.id}  id={course.id}>
+                        <h2>{course.title}</h2>
                         <div className={styles.course}>
                             {course.modules.map(module => (
                             <div key={module.id} className={styles.nameCourse}>
