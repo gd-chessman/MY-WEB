@@ -22,10 +22,10 @@
     padding: 40px;
     margin: 8px;
     background: rgba(255, 255, 255, 0.8);
-    border-radius: 4px;
-    box-shadow: 2px 0px 2px 2px #22c55e;
+    box-shadow: 2px 0px 2px 0px #22c55e;
     opacity: 0.9;
     animation: moveleft 0.5s linear;
+    border-top: 7px solid #0f172a;
   }
   
 
@@ -82,13 +82,13 @@
   }
   
   .signupBox .userBox input:focus ~ label{
-    top: -20px;
+    top: -22px;
     left: 0;
     color: black;
     font-size: 12px;
   }
   .signupBox .userBox input:valid ~ label {
-    top: -20px;
+    top: -22px;
     left: 0;
     color: black;
     font-size: 12px;
@@ -121,9 +121,11 @@
     position: absolute;
     display: block;
   }
-  .forgetPass{
+  .numberCode{
+    font-size: 17px;
+    cursor: pointer;
     float: right;
-    color: blue;
+    color: #000;
   }
   
   .signupBox a span:nth-child(1) {

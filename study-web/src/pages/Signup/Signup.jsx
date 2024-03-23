@@ -37,7 +37,7 @@ function Signup(){
                     <input required name="" type="text"  />
                     <label>Nhập mã xác nhận</label>
                     </div>
-                    <div className={styles.forgetPass}>Gửi mã xác nhận!</div>
+                    <div className={styles.numberCode}>Gửi mã xác nhận!</div>
                     <a href="#">
                     <span />
                     <span />

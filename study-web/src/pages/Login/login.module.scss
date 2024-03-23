@@ -22,10 +22,11 @@
     padding: 40px;
     margin: 8px;
     background: rgba(255, 255, 255, 0.8);
-    border-radius: 4px;
-    box-shadow: 2px 0px 2px 2px #22c55e;
+    box-shadow: 2px 0px 2px 0px #22c55e;
     opacity: 0.9;
     animation: moveright 0.5s linear;
+    border-top: 7px solid #0f172a;
+    
   }
 @keyframes moveright {
   0%{
@@ -78,13 +79,13 @@
   }
   
   .loginBox .userBox input:focus ~ label{
-    top: -20px;
+    top: -22px;
     left: 0;
     color: black;
     font-size: 12px;
   }
   .loginBox .userBox input:valid ~ label {
-    top: -20px;
+    top: -22px;
     left: 0;
     color: black;
     font-size: 12px;
@@ -119,8 +120,10 @@
     display: block;
   }
   .forgetPass{
+    font-size: 17px;
+    cursor: pointer;
     float: right;
-    color: blue;
+    color: #000;
   }
   
   .loginBox a span:nth-child(1) {
