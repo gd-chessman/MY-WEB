@@ -14,6 +14,7 @@
     justify-content: center;
     align-items: center;
     background: url("https://ben.com.vn/tin-tuc/wp-content/uploads/2020/09/hinh-nen-powerpoint-don-gian-2.jpg") center/cover no-repeat #f0f0f0;
+    overflow-x: hidden;
 }
 
 
@@ -58,7 +59,7 @@
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    color: #f97316;
+    color: #22c55e;
     margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid black;
@@ -99,7 +100,7 @@
     display: inline-block;
     padding: 10px 20px;
     font-weight: bold;
-    color: #f97316;
+    color: #22c55e;
     background-color: whitesmoke;
     font-size: 16px;
     text-decoration: none;

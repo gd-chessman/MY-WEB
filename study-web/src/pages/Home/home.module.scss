@@ -30,7 +30,7 @@
 .listLanguage{
     overflow-x: auto;
     background-color: #e0e0e0;
-    border-bottom: 1px solid #7fff00;
+    border-bottom: 1px solid #22c55e;
 }
 .listLanguage::-webkit-scrollbar {
     width: 3px;
@@ -38,7 +38,7 @@
 }
 
 .listLanguage::-webkit-scrollbar-thumb {
-    background-color: #7fff00;
+    background-color: #22c55e;
 }
 
 .listLanguage::-webkit-scrollbar-track {
@@ -90,7 +90,7 @@
     font-weight: 600;
 }
 .menuTop > a:hover{
-    color: #7fff00;
+    color: #22c55e;
 }
 .menuTop > a > p{
     white-space: nowrap;
@@ -136,7 +136,7 @@
     background-color: white;
 }
 .nameCourse a{
-    color: #f97316;
+    color: #22c55e;
 }
 .nameCourse img{
     border-top-left-radius: 0.5rem;
