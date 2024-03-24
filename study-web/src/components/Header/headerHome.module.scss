@@ -37,9 +37,13 @@
   font-family: 'Black Ops One', system-ui;
 }
 @keyframes k { to { --k: 1 } }
+#header .logo > a img{
+    border: 1px solid white;
+}
 /* Header top */
 .headerTop {
     width: 100%;
+    background-color: #050a30;
     background-color: #0f172a;
     height: 100%;
 }
