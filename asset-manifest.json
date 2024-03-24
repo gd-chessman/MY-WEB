@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.42e261aa.css",
-    "main.js": "/static/js/main.cc0e6545.js",
+    "main.css": "/static/css/main.11c51a4a.css",
+    "main.js": "/static/js/main.e91271de.js",
     "static/js/453.5cbeae02.chunk.js": "/static/js/453.5cbeae02.chunk.js",
     "static/media/item12.png": "/static/media/item12.37a42e9db91499f9060d.png",
     "static/media/item10.png": "/static/media/item10.fc8bdd843513d7c5f231.png",
@@ -23,16 +23,16 @@
     "static/media/bootstrap.png": "/static/media/bootstrap.1b0b9c34a73c467385e3.png",
     "static/media/tiktok.png": "/static/media/tiktok.8a9452a0a4c037d9de63.png",
     "static/media/frontend.png": "/static/media/frontend.cbf50ed4f7824e6cfa04.png",
-    "static/media/avatar.png": "/static/media/avatar.27ad4498bbd8a3194841.png",
+    "static/media/avatar.png": "/static/media/avatar.9d5a16df133f596529ee.png",
     "static/media/code.png": "/static/media/code.569da3659c41a7c40aa0.png",
     "static/media/icons8-zalo-480.png": "/static/media/icons8-zalo-480.8b31612857c517ac3d2b.png",
     "index.html": "/index.html",
-    "main.42e261aa.css.map": "/static/css/main.42e261aa.css.map",
-    "main.cc0e6545.js.map": "/static/js/main.cc0e6545.js.map",
+    "main.11c51a4a.css.map": "/static/css/main.11c51a4a.css.map",
+    "main.e91271de.js.map": "/static/js/main.e91271de.js.map",
     "453.5cbeae02.chunk.js.map": "/static/js/453.5cbeae02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.42e261aa.css",
-    "static/js/main.cc0e6545.js"
+    "static/css/main.11c51a4a.css",
+    "static/js/main.e91271de.js"
   ]
 }
