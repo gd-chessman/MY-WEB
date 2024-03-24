@@ -129,6 +129,7 @@
     align-items: center;
     justify-content: center;
     color: whitesmoke;
+    white-space: nowrap;
 }
 
 .navLinkHeader ul li:first-child > a {
@@ -272,9 +273,12 @@
     .headerTop .navLinkHeader ul li:nth-child(6) {
         display: none;
     }
-
+    .navLinkHeader ul li:nth-child(4) {
+        width: 100%;
+    }
     .navLinkHeader .group{
-        width: 310px;
+        margin: 0 auto;
+        width: 92%;
     }
 
 }

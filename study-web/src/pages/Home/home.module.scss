@@ -92,6 +92,9 @@
 .menuTop > a:hover{
     color: #7fff00;
 }
+.menuTop > a > p{
+    white-space: nowrap;
+}
 .menuTop .navItem{
     padding: 0.4rem;
 }
