@@ -1,10 +1,21 @@
+:root{
+    --p1-color: #0f172a;
+    --p2-color: #f97316;
+    --p3-color: #22c55e;
+}
+
+
+
+
+
+
 body::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #22c55e;
+    background-color: var(--p3-color);
 }
 body::-webkit-scrollbar-thumb:hover {
     background-color: #7fff00;

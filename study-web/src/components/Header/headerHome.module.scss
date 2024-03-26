@@ -43,8 +43,7 @@
 /* Header top */
 .headerTop {
     width: 100%;
-    background-color: #050a30;
-    background-color: #0f172a;
+    background-color: var(--p1-color);
     height: 100%;
 }
 
@@ -144,7 +143,7 @@
 
 .navLinkHeader ul li:nth-last-child(2) a {
     padding: 4px 6px;
-    border: 0.5px solid #f97316;
+    border: 0.5px solid var(--p2-color);
     border-radius: 8px;
 }
 

@@ -22,7 +22,7 @@
     padding: 40px;
     margin: 8px;
     background: rgba(255, 255, 255, 0.8);
-    box-shadow: 2px 0px 2px 0px #22c55e;
+    box-shadow: 2px 0px 2px 0px var(--p3-color);
     opacity: 0.9;
     animation: moveright 0.5s linear;
     border-top: 7px solid #0f172a;
@@ -59,7 +59,7 @@
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    color: #22c55e;
+    color: var(--p3-color);
     margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid black;
@@ -97,7 +97,7 @@
     display: inline-block;
     padding: 10px 20px;
     font-weight: bold;
-    color: #22c55e;
+    color: var(--p3-color);
     background-color: whitesmoke;
     font-size: 16px;
     text-decoration: none;
@@ -212,7 +212,7 @@
   }
   
   .loginBox a.a2 {
-    color: #22c55e;
+    color: var(--p3-color);
     text-decoration: none;
   }
   
