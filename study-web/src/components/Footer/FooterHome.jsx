@@ -40,9 +40,9 @@ function FooterHome(){
                 <h3>Liên kết</h3>
                 <ul className={styles.linkInfor}>
                     <li><a href="https://www.facebook.com/LeVanQuy0101" target="_blank"><img src={fbIcon} alt=""/></a></li>
-                    <li><a href="zalo.html" target="_blank"><img src={zaloIcon} alt=""/></a></li>
+                    <li><a href="https://zalo.me/0859737366" target="_blank"><img src={zaloIcon} alt=""/></a></li>
                     <li><a href="https://www.tiktok.com/@gd_chessman" target="_blank"><img src={tiktokIcon} alt=""/></a></li>
-                    <li><a href="time.html" target="_blank"><img src={youtubeIcon} alt=""/></a></li>
+                    <li><a href="https://www.youtube.com/@GD_Chessman" target="_blank"><img src={youtubeIcon} alt=""/></a></li>
                 </ul>
             </div>
         </div>
